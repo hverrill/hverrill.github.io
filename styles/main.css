@@ -2,10 +2,14 @@ body {
     /* background-color: #F4F4F4; */
     background-color: white;
     color: black;
-    font-family: Consolas, Arial, Tahoma, sans-serif;
+    font-family: 'Consolas', 'Courier New', Arial, Tahoma, sans-serif;
+}
+p {
+    margin-top: .9em;
+    margin-bottom: .9em;
 }
 .main {
-    margin-left: 5vw;
+    margin-left: 7vw;
     margin-right: auto;
     margin-top: 3vw;
     margin-bottom: 3vw;
@@ -16,7 +20,7 @@ body {
     margin-left: 20px;
 }
 .secondary {
-    max-width: 84vw;
+    max-width: 82vw;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -29,9 +33,9 @@ body {
 }
 /* Hover link */
 a:hover {
+    transition: 0.5s;
     background-image: linear-gradient(to right, #FF007F, #FF5000) ;
     color:white;
-    transition: 0.5s;
 }
 a {
     color: #252525;
@@ -50,4 +54,10 @@ a {
 }
 .small {
     font-size: .85em;
+}
+#logo {
+    margin-top: 3px;
+    margin-left: 3px;
+    max-width: 24px;
+    max-height: 24px;
 }

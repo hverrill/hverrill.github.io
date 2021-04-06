@@ -1,0 +1,24 @@
+body {
+    background-color: #FFF7F7;
+    margin-left: 7vw;
+    margin-right: auto;
+    margin-top: 3vw;
+    margin-bottom: auto;
+    color: black;
+    font-family: Consolas, Arial, Tahoma, sans-serif;
+}
+.big { 
+    font-size: 1.8vw;
+
+}
+.medium {
+    font-size: 1.2vw;
+}
+.small {
+    font-size: .9vw;
+}
+#intro {
+    
+    
+    
+}

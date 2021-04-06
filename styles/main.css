@@ -16,12 +16,12 @@ p {
 }
 .primary {
     max-width: 600px;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-left: 20px;
 }
 .secondary {
     max-width: 82vw;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-left: 20px;
 }
 .bar {

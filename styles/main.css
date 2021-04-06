@@ -7,6 +7,10 @@ body {
     color: black;
     font-family: Consolas, Arial, Tahoma, sans-serif;
 }
+.bar{
+    background-image: linear-gradient(to right, #FF007F, #FF5000);
+    margin-top: 60px;
+}
 .big { 
     font-size: 1.8vw;
 
@@ -16,9 +20,4 @@ body {
 }
 .small {
     font-size: .9vw;
-}
-#intro {
-    
-    
-    
 }

@@ -1,19 +1,24 @@
 body {
-    background-color: #F4F4F4;
+    /* background-color: #F4F4F4; */
+    background-color: white;
     color: black;
     font-family: Consolas, Arial, Tahoma, sans-serif;
 }
 .main {
-    margin-left: 7vw;
+    margin-left: 5vw;
     margin-right: auto;
     margin-top: 3vw;
     margin-bottom: auto;
 }
 .primary {
     max-width: 600px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .secondary {
     max-width: 84vw;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .bar {
     background-image: linear-gradient(to right, #FF007F, #FF5000);

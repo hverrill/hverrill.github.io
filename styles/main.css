@@ -8,7 +8,7 @@ body {
     margin-left: 5vw;
     margin-right: auto;
     margin-top: 3vw;
-    margin-bottom: auto;
+    margin-bottom: 3vw;
 }
 .primary {
     max-width: 600px;
@@ -27,10 +27,11 @@ body {
     width: auto;
     height: 30px; 
 }
-
+/* Hover link */
 a:hover {
     background-image: linear-gradient(to right, #FF007F, #FF5000) ;
     color:white;
+    transition: 0.5s;
 }
 a {
     color: #252525;

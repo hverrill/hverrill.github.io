@@ -33,9 +33,9 @@ p {
 }
 /* Hover link */
 .link:hover {
-    transition: 0.5s;
     background-image: linear-gradient(to right, #FF007F, #FF5000) ;
     color:white;
+    transition: 0.5s;
 }
 .link {
     color: #252525;

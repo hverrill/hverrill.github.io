@@ -154,6 +154,9 @@ b {
 }
 
 /* Rocker Switch CSS Rules */
+/* Credit to Marcus Connor:
+    https://codepen.io/marcusconnor/pen/QJNvMaa
+ */
 *, *:before, *:after {
     box-sizing: inherit;
     margin:0;
@@ -163,7 +166,7 @@ b {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top:1em;
+    padding-top: 1em;
 }
 
 

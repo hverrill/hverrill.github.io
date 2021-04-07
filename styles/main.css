@@ -11,7 +11,7 @@ p {
 .main {
     margin-left: 7vw;
     margin-right: auto;
-    margin-top: 3vw;
+    margin-top: 5em;
     margin-bottom: 3vw;
 }
 .primary {
@@ -28,8 +28,12 @@ p {
     background-image: linear-gradient(to right, #FF007F, #FF5000);
     color: white;
     margin: 0;
-    width: auto;
+
     height: 30px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
 /* Hover link */
 .link:hover {

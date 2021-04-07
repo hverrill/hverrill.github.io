@@ -71,6 +71,7 @@ p {
 .link {
     color: black;
     font-size: 105%;
+    text-decoration: underline;
 }
 /* Bold Hover */
 b:hover {
@@ -139,6 +140,7 @@ b {
     .link {
         color: black;
         font-size: 110%;
+        text-decoration: underline;
     }
     /* Bold Hover */
     b:hover {

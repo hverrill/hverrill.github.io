@@ -1,3 +1,5 @@
+
+/* UNIVERSAL RULES */
 body {
     /* background-color: #F4F4F4; */
     background-color: white;
@@ -8,21 +10,48 @@ p {
     margin-top: .9em;
     margin-bottom: .9em;
 }
+.bar {
+    background-image: linear-gradient(to right, #FF007F, #FF5000);
+    color: white;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* DESKTOP/TABLET RULES */
+@media only screen and (min-width: 450px) {
+    .bar {
+        height: 40px; 
+    }
+    #logo {
+        margin-top: 4px;
+        margin-left: 4px;
+        max-width: 32px;
+        max-height: 32px;
+    }
+}
+
+
+/* MOBILE RULES */
+@media only screen and (max-width: 450px) {
+    .bar {
+        height: 80px; 
+    }
+    #logo {
+        margin-top: 6px;
+        margin-left: 6px;
+        max-width: 68px;
+        max-height: 68px;
+    }
+}
 .main {
     margin-left: 7vw;
     margin-right: auto;
     margin-top: 5em;
     margin-bottom: 3vw;
 }
-.bar {
-    background-image: linear-gradient(to right, #FF007F, #FF5000);
-    color: white;
-    margin: 0;
-    height: 40px; 
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
 /* Primary and Secondary Sizes for content */
 .primary {
     max-width: 600px;
@@ -65,12 +94,7 @@ b:hover {
     font-size: .85em;
 }
 
-#logo {
-    margin-top: 4px;
-    margin-left: 4px;
-    max-width: 32px;
-    max-height: 32px;
-}
+
 /* #me {
     display: flex;
     justify-content: center;

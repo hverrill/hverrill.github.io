@@ -5,22 +5,26 @@
         <title>Henry Verrill's Website</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
         <link rel="icon" href="assets/favicon.png">
     </head>
     <body>
         <nav class="bar">
-            <div>
-                <a href="https://hverrill.github.io/#">
-                    <img id="logo" src="assets/logo.png" alt="H Logo. Click to navigate home."> 
-                </a>
+            <div class="row">
+                <div class="col-1">
+                    <a href="https://hverrill.github.io/#">
+                        <img class="logo" src="assets/logo.png" alt="H Logo. Click to navigate home."> 
+                    </a>
+                </div>
+                <div class="darkModeSwitch col">
+                    <label class="rocker rocker-small">
+                        <input type="checkbox">
+                        <span class="switch-left">Light</span>
+                        <span class="switch-right">Dark</span>
+                    </label>
+                </div>
             </div>
-            <div class="dardModeSwitch mid">
-                <label class="rocker rocker-small">
-                    <input type="checkbox">
-                    <span class="switch-left">Light</span>
-                    <span class="switch-right">Dark</span>
-                  </label>
-            </div>
+            
         </nav>
 
         <main class="main top">
@@ -100,6 +104,7 @@
         </footer>
         
     </body>
+    <script src="scripts/bootstrap-material-design.js"></script>
     <script src="public/scripts/main.js"></script>
     <style></style>
 </html>

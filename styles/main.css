@@ -22,7 +22,7 @@ p {
 .bar {
     height: 40px; 
 }
-#logo {
+.logo {
     margin-top: 4px;
     margin-left: 4px;
     max-width: 32px;
@@ -90,7 +90,7 @@ b {
     .bar {
         height: 60px; 
     }
-    #logo {
+    .logo {
         margin-top: 5px;
         margin-left: 5px;
         max-width: 50px;
@@ -162,11 +162,11 @@ b {
     margin:0;
     padding:0;
 }
-.mid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1em;
+.darkModeSwitch {
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: right;
+    margin-left: 75%;
 }
 
 
@@ -194,8 +194,8 @@ b {
     }
 
 .rocker-small {
-    font-size: 0.75em; /* Sizes the switch */
-    margin: 1em;
+    font-size: 0.55em; /* Sizes the switch */
+    margin: 0.1em;
 }
 
 .rocker::before {
@@ -309,5 +309,8 @@ input:focus + .switch-left + .switch-right {
 
 input:checked:focus + .switch-left + .switch-right {
     color: #333;
+}
+div {
+    outline: black solid 1px;
 }
 

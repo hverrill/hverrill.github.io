@@ -38,7 +38,7 @@ p {
     transition: 0.5s; 
 }
 .link {
-    color: gold;
+    color: black;
 }
 b:hover {
     background-color: black;

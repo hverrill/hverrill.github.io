@@ -18,9 +18,6 @@ p {
     top: 0;
     width: 100%;
 }
-
-/* DESKTOP/TABLET RULES */
-
 /* Navbar */
 .bar {
     height: 40px; 
@@ -35,8 +32,11 @@ p {
 .main {
     margin-left: 7vw;
     margin-right: auto;
-    margin-top: 5em;
+    margin-top: 2vw;
     margin-bottom: 3vw;
+}
+.top {
+    margin-top: 5em;
 }
 /* Primary and Secondary Sizes for content */
 .primary {
@@ -100,8 +100,11 @@ b {
     .main {
         margin-left: 4vw;
         margin-right: 4vw;
-        margin-top: 6em;
-        margin-bottom: 4vw;
+        margin-top: 2em;
+        margin-bottom: 6vh;
+    }
+    .top {
+        margin-top: 12vh;
     }
     /* Primary and Secondary Sizes for content */
     .primary {

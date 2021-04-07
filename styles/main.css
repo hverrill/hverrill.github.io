@@ -20,38 +20,24 @@ p {
 }
 
 /* DESKTOP/TABLET RULES */
-@media only screen and (min-width: 450px) {
-    .bar {
-        height: 40px; 
-    }
-    #logo {
-        margin-top: 4px;
-        margin-left: 4px;
-        max-width: 32px;
-        max-height: 32px;
-    }
+
+/* Navbar */
+.bar {
+    height: 40px; 
+}
+#logo {
+    margin-top: 4px;
+    margin-left: 4px;
+    max-width: 32px;
+    max-height: 32px;
 }
 
-
-/* MOBILE RULES */
-@media only screen and (max-width: 450px) {
-    .bar {
-        height: 80px; 
-    }
-    #logo {
-        margin-top: 6px;
-        margin-left: 6px;
-        max-width: 68px;
-        max-height: 68px;
-    }
-}
 .main {
     margin-left: 7vw;
     margin-right: auto;
     margin-top: 5em;
     margin-bottom: 3vw;
 }
-
 /* Primary and Secondary Sizes for content */
 .primary {
     max-width: 600px;
@@ -62,23 +48,6 @@ p {
     max-width: 82vw;
     margin-right: 30px;
     margin-left: 20px;
-}
-/* Navbar */
-
-/* Hover link */
-.link:hover {
-    background-image: linear-gradient(to right, #FF007F, #FF5000) ;
-    color:white;
-    transition: 0.5s; 
-}
-.link {
-    color: black;
-}
-/* Bold Hover */
-b:hover {
-    background-color: black;
-    color: white;
-    transition: 0.5s;
 }
 /* Custom Font Sizes */
 .header { 
@@ -93,9 +62,91 @@ b:hover {
 .small {
     font-size: .85em;
 }
+/* Hover link */
+.link:hover {
+    background-image: linear-gradient(to right, #FF007F, #FF5000) ;
+    color:white;
+    transition: 0.5s; 
+    font-size: 107%;
+}
+.link {
+    color: black;
+    font-size: 105%;
+}
+/* Bold Hover */
+b:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    font-size: 107%;
+}
+b {
+    font-size: 105%;
+}
 
+/* MOBILE RULES */
+@media only screen and (max-width: 780px) {
+    /* Navbar */
+    .bar {
+        height: 60px; 
+    }
+    #logo {
+        margin-top: 5px;
+        margin-left: 5px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+    /* Main Block Margins */
+    .main {
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 7em;
+        margin-bottom: 4vw;
+    }
+    /* Primary and Secondary Sizes for content */
+    .primary {
+        max-width: 75vw;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .secondary {
+        max-width: 82vw;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    /* Custom Font Sizes */
+    .header { 
+        font-size: 2.8em;
+    }
+    .big { 
+        font-size: 2em;
+    }
+    .medium {
+        font-size: 1.3em;
+    }
+    .small {
+        font-size: 1em;
+    }
+    /* Hover link */
+    .link:hover {
+        background-image: linear-gradient(to right, #FF007F, #FF5000) ;
+        color:white;
+        transition: 0.5s; 
+        font-size: 112%;
+    }
+    .link {
+        color: black;
+        font-size: 110%;
+    }
+    /* Bold Hover */
+    b:hover {
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+        font-size: 112%;
+    }
+    b {
+        font-size: 110%;
+    }
+}
 
-/* #me {
-    display: flex;
-    justify-content: center;
-} */

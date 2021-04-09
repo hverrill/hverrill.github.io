@@ -1,13 +1,10 @@
 
 /* UNIVERSAL RULES */
-body {
-    /* background-color: #F4F4F4; */
+.body, body, main {
     background-color: white;
     color: black;
     font-family: 'Consolas', 'Courier New', Arial, Tahoma, sans-serif;
 }
-
-
 p {
     margin-top: .9em;
     margin-bottom: .9em;
@@ -86,9 +83,28 @@ b {
     font-size: 105%;
 }
 @media (prefers-color-scheme: dark) { /* Dark Mode */
-    body {
-        background-color: #313131;
+    .body, body, main {
+        background-color: #1b1b1b;
         color: white;
+    }
+    /* Hover link */
+    .link:hover {
+        background-image: linear-gradient(to right, #FF007F, #FF5000) ;
+        color:white;
+        transition: 0.5s; 
+        font-size: 107%;
+    }
+    .link {
+        color: white;
+        font-size: 105%;
+        text-decoration: underline;
+    }
+    /* Bold Hover */
+    b:hover {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        font-size: 107%;
     }
 }
 
@@ -163,15 +179,16 @@ b {
     @media (prefers-color-scheme: dark) { /* Dark Mode */
         /* Hover link */
         .link:hover {
-            color:#5f5f5f;
+            color:white;
         }
         .link {
             color: white;
+
         }
         /* Bold Hover */
         b:hover {
             background-color: white;
-            color: #5f5f5f;
+            color: black;
         }
     }
 }

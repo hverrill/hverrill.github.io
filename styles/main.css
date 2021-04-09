@@ -130,17 +130,7 @@ b {
     .top {
         margin-top: 5em;
     }
-    /* Primary and Secondary Sizes for content */ */
-    .primary {
-        max-width: 75vw;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    .secondary {
-        max-width: 82vw;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
+    
     /* Custom Font Sizes */
     .header { 
         font-size: 2.4em;
@@ -175,6 +165,19 @@ b {
     }
     b {
         font-size: 110%;
+    }
+    /* Primary and Secondary Sizes for content */
+    .primary {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 70vw;
+        min-width: 330px;
+    }
+    .secondary {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 65vw;
+        min-width: 300px;
     }
     @media (prefers-color-scheme: dark) { /* Dark Mode */
         /* Hover link */

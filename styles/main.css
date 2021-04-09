@@ -168,16 +168,16 @@ b {
     }
     /* Primary and Secondary Sizes for content */
     .primary {
-        margin-right: auto;
-        margin-left: auto;
         max-width: 70vw;
         min-width: 330px;
-    }
-    .secondary {
         margin-right: auto;
         margin-left: auto;
+    }
+    .secondary {
         max-width: 65vw;
         min-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
     }
     @media (prefers-color-scheme: dark) { /* Dark Mode */
         /* Hover link */

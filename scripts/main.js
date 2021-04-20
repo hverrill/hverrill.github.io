@@ -15,7 +15,7 @@ window.onscroll = function(){
         let newEmoji = hv.emojis[Math.floor(Math.round(Math.random()*hv.emojis.length),34)];
         hv.emojiElement.innerHTML = newEmoji;
         hv.emojiChanged = true;
-    } else if(window.scrollY < 3) {
+    } else if(window.scrollY < 5) {
         hv.emojiElement.innerHTML = "👋";
     }
 }

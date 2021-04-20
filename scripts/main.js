@@ -9,12 +9,10 @@ var hv = hv || {};
 /** globals */
 hv.counter = 0;
 hv.emojis = ["👋","😁","😋","🤨","😳","😱","😤","🤖","💥","👌","🤙","🤟","👏","🤝","🦾","🧠","👀","🦍","🐈","🍚","🏛","🌌","⚡","🔥","💧","👘","💎","📜","💰","📝","🗑","🧻","⁉","♻","⚜"];
-hv.emojiElement = document.getElementsByClassName("emoji");
+hv.emojiElement = document.getElementById("emoji");
 window.onscroll = function(){
     let newEmoji = hv.emojis[Math.floor(Math.round(Math.random()*hv.emojis.length),34)];
-    hv.emojiElement.array.forEach(e => {
-        e.innerHTML = newEmoji;
-    });
+    hv.emojiElement.innerHTML = newEmoji;
 }
 
 /** Functions */

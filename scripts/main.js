@@ -11,10 +11,10 @@ hv.counter = 0;
 hv.emojis = ["👋","😁","😋","🤨","😳","😱","😤","🤖","💥","👌","🤙","🤟","👏","🤝","🦾","🧠","👀","🦍","🐈","🍚","🏛","🌌","⚡","🔥","💧","👘","💎","📜","💰","📝","🗑","🧻","⁉","♻","⚜"];
 hv.emojiElement = document.getElementsByClassName("emoji");
 window.onscroll = function(){
-    let index = Math.round(Math.random()*hv.emojis.length);
-    if(index == 35) index--;
-    let newEmoji = hv.emojis[index];
-    console.log(newEmoji+" i:: " +index);
+    let newEmoji = hv.emojis[Math.floor(Math.round(Math.random()*hv.emojis.length),34)];
+    hv.emojiElement.array.forEach(e => {
+        e.innerHTML = newEmoji;
+    });
 }
 
 /** Functions */

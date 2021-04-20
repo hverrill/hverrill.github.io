@@ -10,7 +10,7 @@ var hv = hv || {};
 hv.counter = 0;
 hv.emojis = ["👋","😁","😋","🤨","😳","😱","😤","🤖","💥","👌","🤙","🤟","👏","🤝","🦾","🧠","👀","🦍","🐈","🍚","🏛","🌌","⚡","🔥","💧","👘","💎","📜","💰","📝","🗑","🧻","⁉","♻","⚜"];
 hv.emojiElement = document.getElementsByClassName("emoji");
-hv.emojiElement.onscroll = function() {
+window.onscroll = function(){
     var newEmoji = hv.emojis[Math.round(Math.random()*hv.emojis.length)];
     console.log(newEmoji);
 }

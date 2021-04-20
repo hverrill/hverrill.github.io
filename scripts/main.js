@@ -11,8 +11,9 @@ hv.counter = 0;
 hv.emojis = ["👋","😁","😋","🤨","😳","😱","😤","🤖","💥","👌","🤙","🤟","👏","🤝","🦾","🧠","👀","🦍","🐈","🍚","🏛","🌌","⚡","🔥","💧","👘","💎","📜","💰","📝","🗑","🧻","⁉","♻","⚜"];
 hv.emojiElement = document.getElementsByClassName("emoji");
 window.onscroll = function(){
-    var newEmoji = hv.emojis[Math.round(Math.random()*hv.emojis.length)];
-    console.log(newEmoji);
+    let index = Math.round(Math.random()*hv.emojis.length)
+    let newEmoji = hv.emojis[index];
+    console.log(newEmoji, index);
 }
 
 /** Functions */

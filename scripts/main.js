@@ -8,6 +8,15 @@ var hv = hv || {};
 
 /** globals */
 hv.counter = 0;
+hv.emojis = ["👋","😁","😋","🤨","😳","😱","😤","🤖",
+                "💥","👌","🤙","🤟","👏","🤝","🦾","🧠","👀",
+                "🦍","🐈","🍚","🏛","🌌","⚡","🔥","💧","👘",
+                "💎","📜","💰","📝","🗑","🧻","⁉","♻","⚜"];
+hv.emojiElement = document.getElementsByClassName("emoji");
+emojiElement.onscroll = function() {
+    var newEmoji = hv.emojis[Math.round(Math.random()*hv.emojis.length)];
+    console.log(newEmoji);
+}
 
 /** Functions */
 // hv.write((count) => {
@@ -34,6 +43,7 @@ hv.counter = 0;
 
 // 	}
 // }
+
 
 /* Main */
 hv.main = function () {

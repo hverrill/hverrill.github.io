@@ -8,11 +8,16 @@ var hv = hv || {};
 
 /** globals */
 hv.counter = 0;
-hv.emojis = ["👋","😁","😋","🤨","😳","😱","😤","🤖","💥","👌","🤙","🤟","👏","🤝","🦾","🧠","👀","🦍","🐈","🍚","🌌","⚡","🔥","💧","👘","💎","📜","💰","📝","🧻"];
+hv.emojis = ["😁","😋","🤨","😳","😱","😤","🤖","💥","👌","🤙","🤟","👏","🤝","🦾","🧠","👀","🦍","🐈","🍚","🌌","⚡","🔥","💧","👘","💎","📜","💰","📝","🧻"];
 hv.emojiElement = document.getElementById("emoji");
 window.onscroll = function(){
-    let newEmoji = hv.emojis[Math.floor(Math.round(Math.random()*hv.emojis.length),34)];
-    hv.emojiElement.innerHTML = newEmoji;
+    if(window.scrollY > 20){
+        let newEmoji = hv.emojis[Math.floor(Math.round(Math.random()*hv.emojis.length),34)];
+        hv.emojiElement.innerHTML = newEmoji;
+        hv.emojiChanged = true;
+    } else if(window.scrollY < 3) {
+        hv.emojiElement.innerHTML = "👋";
+    }
 }
 
 /** Functions */

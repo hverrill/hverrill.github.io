@@ -12,9 +12,8 @@ hv.emojis = ["😁","😋","🤨","😳","😱","😤","🤖","💥","👌","�
 hv.emojiElement = document.getElementById("emoji");
 window.onscroll = function(){
     if(window.scrollY > 20){
-        let newEmoji = hv.emojis[Math.floor(Math.round(Math.random()*hv.emojis.length),34)];
+        let newEmoji = hv.emojis[Math.floor(Math.round(Math.random()*hv.emojis.length-1))];
         hv.emojiElement.innerHTML = newEmoji;
-        hv.emojiChanged = true;
     } else if(window.scrollY < 5) {
         hv.emojiElement.innerHTML = "👋";
     }

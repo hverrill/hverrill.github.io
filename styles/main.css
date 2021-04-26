@@ -3,7 +3,7 @@
 .body, body, main {
     background-color: white;
     color: black;
-    font-family: 'Consolas', 'Courier', 'Courier New', Arial, sans-serif;
+    font-family: 'Consolas', monospace, 'Lucida Console', 'Courier New', 'Courier', Arial, sans-serif;
 }
 p {
     margin-top: .9em;

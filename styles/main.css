@@ -124,7 +124,6 @@ b {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
 }
 /* MOBILE RULES */
 @media only screen and (max-width: 1200px) {
@@ -193,9 +192,6 @@ b {
         max-width: 95vw;
         min-width: 360px;
     }
-    /* #projecTileList {
-        justify-content: center;
-    } */
     @media (prefers-color-scheme: dark) { /* Dark Mode */
         /* Hover link */
         .link:hover {
@@ -216,13 +212,53 @@ b {
     .projectCard {
         margin: 0 15px 15px 0;
     }
+        
+    #projectTileList {
+        justify-content: center;
+    }
 }
 /* For Smallest Screens */
 @media only screen and (max-width: 550px) { 
-    #projecTileList {
-        justify-content: center;
+    /* Main Block Margins */
+    .main {
+        margin: 2em 5vw;
     }
+    .top {
+        margin-top: 7em;
+    }
+    /* Primary and Secondary Sizes for content */
+    .primary {
+        max-width: 70vw;
+        min-width: 270px;
+    }
+    .secondary {
+        max-width: 65vw;
+        min-width: 280px;
+    }
+    .wide {
+        max-width: 90vw;
+        min-width: 300px;
+    }
+
+    /* Custom Font Sizes */
+    .header { 
+        font-size: 1.9em;
+    }
+    .big { 
+        font-size: 1.6em;
+    }
+    .medium {
+        font-size: 1.1em;
+    }
+    .small {
+        font-size: .9em;
+    }
+
     .card {
+        max-width: 70vw;
         width: 18rem;
+    }
+    #projectTileList {
+        justify-content: left;
     }
 }

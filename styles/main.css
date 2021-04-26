@@ -230,14 +230,20 @@ b {
     .primary {
         max-width: 70vw;
         min-width: 270px;
+        margin: 0;
+        padding: 0;
     }
     .secondary {
         max-width: 65vw;
         min-width: 280px;
+        margin: 0;
+        padding: 0;
     }
     .wide {
         max-width: 90vw;
         min-width: 300px;
+        margin: 0;
+        padding: 0;
     }
 
     /* Custom Font Sizes */

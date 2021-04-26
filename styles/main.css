@@ -16,6 +16,7 @@ p {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 /* Navbar */
 .bar {
@@ -45,6 +46,11 @@ p {
 .secondary {
     max-width: 82vw;
     margin-right: 30px;
+    margin-left: 20px;
+}
+.wide {
+    max-width: 95vw;
+    margin-right: 20px;
     margin-left: 20px;
 }
 /* Custom Font Sizes */
@@ -108,6 +114,26 @@ b {
     }
 }
 
+.card {
+    width: 18rem;
+    color: black;
+}
+.projectCard {
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+/* Remove underline from tile links */
+.projectCard:link { text-decoration: none; }
+.projectCard:visited { text-decoration: none; }
+.projectCard:hover { text-decoration: none; }
+.projectCard:active { text-decoration: none; }
+
+#projectTileList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
 /* MOBILE RULES */
 @media only screen and (max-width: 1200px) {
     /* Navbar */
@@ -122,8 +148,8 @@ b {
     }
     /* Main Block Margins */
     .main {
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 8vw;
+        margin-right: 8vw;
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -170,14 +196,14 @@ b {
     .primary {
         max-width: 70vw;
         min-width: 330px;
-        margin-right: auto;
-        margin-left: auto;
     }
     .secondary {
         max-width: 65vw;
         min-width: 300px;
-        margin-right: auto;
-        margin-left: auto;
+    }
+    .wide {
+        max-width: 95vw;
+        min-width: 360px;
     }
     @media (prefers-color-scheme: dark) { /* Dark Mode */
         /* Hover link */
@@ -186,12 +212,29 @@ b {
         }
         .link {
             color: white;
-
         }
         /* Bold Hover */
         b:hover {
             background-color: white;
             color: black;
         }
+    }
+    .card {
+        width: 14rem;
+    }
+    .projectCard {
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+}
+/* For Smallest Screens */
+@media only screen and (max-width: 550px) { 
+    .card {
+        max-width: 60vw;
+        width: 18rem;
+    }
+    .projectCard {
+        margin-bottom: 15px;
+        margin-right: 15px;
     }
 }

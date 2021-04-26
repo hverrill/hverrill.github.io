@@ -205,6 +205,9 @@ b {
         max-width: 95vw;
         min-width: 360px;
     }
+    #projecTileList {
+        justify-content: center;
+    }
     @media (prefers-color-scheme: dark) { /* Dark Mode */
         /* Hover link */
         .link:hover {

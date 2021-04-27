@@ -15,9 +15,15 @@
     text-decoration: underline;
     color: black;
 }
+.link:hover {
+    color:black;
+}
 b {
     font-size: 105%;
     font-weight: bold;
+}
+#top { /* To push down top block of content */
+    margin-top: 7em;
 }
 
 .bg { /* Asset and css from https://codepen.io/iceable/pen/yLBrZOd !*/
@@ -31,7 +37,7 @@ b {
     background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
     background-repeat: repeat;
     animation: bg-animation .2s infinite;
-    opacity: .3;
+    opacity: .4;
     visibility: visible;
     z-index: -999;
 }          
@@ -48,7 +54,7 @@ b {
     90% { transform: translate(10%,5%) }
     100% { transform: translate(5%,0) }
 }
-/* End static css! */
+/* End static effect css! */
 .bar { /* Navbar */
     background-image: linear-gradient(to right, #FF007F, #FF5000);
     color: white;
@@ -65,18 +71,6 @@ b {
     max-height: 32px;
 }
 
-/* == HOVER ANIMATIONS == */
-.link:hover { /* Hover link */
-    background-image: linear-gradient(to right, #FF007F, #FF5000) ;
-    color:white;
-    transition: 0.4s; 
-}
-b:hover { /* Hover Bold */
-    background-color: black;
-    color: white;
-    transition: 0.4s;
-}
-
 
 /* == LARGE SCREENS == */
 /* Primary, Secondary, and Wide Sizes for content */
@@ -90,7 +84,7 @@ b:hover { /* Hover Bold */
 }
 .wide {
     max-width: 95vw;
-    margin: 0 20px 0 20px;
+    margin: auto;
 }
 /* Custom Font Sizes */
 .header { 
@@ -107,49 +101,44 @@ b:hover { /* Hover Bold */
 }
 .main { /* Content Alignment */
     margin: 2vw auto 3vw 7vw;
-}
-.top { /* To push down top block of content */
-    margin-top: 7em;
+    background-color: transparent;
 }
 
-/*  */
-.card {
+/* Project Card Rules */
+.card { 
     width: 18rem;
     color: black;
 }
 .projectCard {
     margin: 0 0 20px 20px;
 }
-/* Remove underline from tile links */
+/* Remove underline from card links */
 .projectCard:link { text-decoration: none; }
 .projectCard:visited { text-decoration: none; }
 .projectCard:hover { text-decoration: none; }
 .projectCard:active { text-decoration: none; }
-
-#projectTileList {
+#projectCardList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 /* MEDIUM SCREENS */
 @media only screen and (max-width: 1200px) {
-    /* Navbar */
-    .bar {
+    .bar { /* Navbar */
         height: 60px; 
     }
-    .logo {
+    .logo { /* Navigation Logo */
         margin: 5px 0 0 5px;
         max-width: 50px;
         max-height: 50px;
     }
-    /* Main Block Margins */
-    .main {
+    .main { /* Content Alignment */
         margin: 2em 8vw;
-    }
-    .top {
+    }   
+    #top { /* To push down top block of content */
         margin-top: 7em;
     }
-    
     /* Custom Font Sizes */
     .header { 
         font-size: 2.4em;
@@ -166,51 +155,46 @@ b:hover { /* Hover Bold */
     /* Primary and Secondary Sizes for content */
     .primary {
         max-width: 70vw;
-        min-width: 330px;
         margin: 0 auto;
     }
     .secondary {
         max-width: 65vw;
-        min-width: 300px;
         margin: 0 auto;
     }
     .wide {
-        max-width: 95vw;
-        min-width: 360px;
+        max-width: 70vw;
     }
-    .card {
+
+    /* Project Card Rules */
+    .card { 
         width: 14rem;
     }
     .projectCard {
         margin: 0 15px 15px 0;
-    }    
+    }   
     #projectTileList {
         justify-content: center;
     }
 }
 /* == SMALL SCREENS ==*/
-@media only screen and (max-width: 550px) { 
+@media only screen and (max-width: 686px) { 
     /* Main Block Margins */
-    .main {
+    .main { /* Content Alignment */
         margin: 2em 5vw;
     }
-    .top {
+    #top { /* To push down top block of content */
         margin-top: 7em;
     }
     /* Primary and Secondary Sizes for content */
     .primary {
         max-width: 70vw;
-        min-width: 270px;
     }
     .secondary {
         max-width: 65vw;
-        min-width: 280px;
     }
     .wide {
-        max-width: 90vw;
-        min-width: 300px;
+        max-width: 80vw;
     }
-
     /* Custom Font Sizes */
     .header { 
         font-size: 1.9em;
@@ -224,9 +208,9 @@ b:hover { /* Hover Bold */
     .small {
         font-size: .9em;
     }
+    /* Project Card Rules */
     .card {
-        max-width: 70vw;
-        width: 18rem;
+        width: 60vw;
     }
     .projectCard{
         margin: 7px auto;
@@ -236,7 +220,6 @@ b:hover { /* Hover Bold */
         justify-content: left;
     }
 }
-
 /* == DARK MODE == */
 @media (prefers-color-scheme: dark) {
     .body, body, main {
@@ -246,9 +229,8 @@ b:hover { /* Hover Bold */
     .link {
         color: white;
     }
-    b:hover { /* Hover Bold */
-        background-color: white;
-        color: black;
+    .link:hover {
+        color: white;
     }
-    
 }
+

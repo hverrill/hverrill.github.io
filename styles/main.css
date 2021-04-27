@@ -1,16 +1,25 @@
 /* Fonts */
 @font-face {
     font-family: 'Calibri Light';
-    src: url('assets/fonts/calibril.ttf')  format('truetype');
+    src: url('assets/fonts/calibril.ttf') format('truetype');
 }
-/* UNIVERSAL RULES */
+/* == UNIVERSAL RULES ==*/
 .body, body, main {
     background-color: white;
     color: black;
     font-family: 'Calibri Light', serif, sans-serif;
     font-weight: lighter;
-    /* 'Consolas',monospace, 'Lucida Console', 'Courier', Arial,  */
 }
+.link { 
+    font-size: 105%;
+    text-decoration: underline;
+    color: black;
+}
+b {
+    font-size: 105%;
+    font-weight: bold;
+}
+
 .bg { /* Asset and css from https://codepen.io/iceable/pen/yLBrZOd !*/
     position: fixed;
     top: -50%;
@@ -24,6 +33,7 @@
     animation: bg-animation .2s infinite;
     opacity: .3;
     visibility: visible;
+    z-index: -999;
 }          
 @keyframes bg-animation {
     0% { transform: translate(0,0) }
@@ -38,11 +48,8 @@
     90% { transform: translate(10%,5%) }
     100% { transform: translate(5%,0) }
 }
-p {
-    margin-top: .9em;
-    margin-bottom: .9em;
-}
-.bar {
+/* End static css! */
+.bar { /* Navbar */
     background-image: linear-gradient(to right, #FF007F, #FF5000);
     color: white;
     margin: 0;
@@ -50,24 +57,29 @@ p {
     top: 0;
     width: 100%;
     z-index: 999;
-}
-/* Navbar */
-.bar {
     height: 40px; 
 }
-.logo {
-    /* top | right | bottom | left */
+.logo { /* Navigation Logo */
     margin: 4px 0 0 4px;
     max-width: 32px;
     max-height: 32px;
 }
-.main {
-    margin: 2vw auto 3vw 7vw;
+
+/* == HOVER ANIMATIONS == */
+.link:hover { /* Hover link */
+    background-image: linear-gradient(to right, #FF007F, #FF5000) ;
+    color:white;
+    transition: 0.4s; 
 }
-.top {
-    margin-top: 7em;
+b:hover { /* Hover Bold */
+    background-color: black;
+    color: white;
+    transition: 0.4s;
 }
-/* Primary and Secondary Sizes for content */
+
+
+/* == LARGE SCREENS == */
+/* Primary, Secondary, and Wide Sizes for content */
 .primary {
     max-width: 600px;
     margin: 0 30px 0 20px;
@@ -82,65 +94,25 @@ p {
 }
 /* Custom Font Sizes */
 .header { 
-    font-size: 2.3em;
+    font-size: 2.5em;
 }
 .big { 
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 .medium {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 .small {
-    font-size: .85em;
+    font-size: .9em;
 }
-/* Hover link */
-.link:hover {
-    background-image: linear-gradient(to right, #FF007F, #FF5000) ;
-    color:white;
-    transition: 0.5s; 
-    font-size: 107%;
+.main { /* Content Alignment */
+    margin: 2vw auto 3vw 7vw;
 }
-.link {
-    color: black;
-    font-size: 105%;
-    text-decoration: underline;
+.top { /* To push down top block of content */
+    margin-top: 7em;
 }
-/* Bold Hover */
-b:hover {
-    background-color: black;
-    color: white;
-    transition: 0.5s;
-    font-size: 107%;
-}
-b {
-    font-size: 105%;
-    font-weight: normal;
-}
-@media (prefers-color-scheme: dark) { /* Dark Mode */
-    .body, body, main {
-        background-color: #1b1b1b;
-        color: white;
-    }
-    /* Hover link */
-    .link:hover {
-        background-image: linear-gradient(to right, #FF007F, #FF5000) ;
-        color:white;
-        transition: 0.5s; 
-        font-size: 107%;
-    }
-    .link {
-        color: white;
-        font-size: 105%;
-        text-decoration: underline;
-    }
-    /* Bold Hover */
-    b:hover {
-        background-color: white;
-        color: black;
-        transition: 0.5s;
-        font-size: 107%;
-    }
-}
+
+/*  */
 .card {
     width: 18rem;
     color: black;
@@ -159,7 +131,7 @@ b {
     flex-direction: row;
     flex-wrap: wrap;
 }
-/* MOBILE RULES */
+/* MEDIUM SCREENS */
 @media only screen and (max-width: 1200px) {
     /* Navbar */
     .bar {
@@ -191,28 +163,6 @@ b {
     .small {
         font-size: 1em;
     }
-    /* Hover link */
-    .link:hover {
-        background-image: linear-gradient(to right, #FF007F, #FF5000) ;
-        color:white;
-        transition: 0.5s; 
-        font-size: 112%;
-    }
-    .link {
-        color: black;
-        font-size: 110%;
-        text-decoration: underline;
-    }
-    /* Bold Hover */
-    b:hover {
-        background-color: black;
-        color: white;
-        transition: 0.5s;
-        font-size: 112%;
-    }
-    b {
-        font-size: 110%;
-    }
     /* Primary and Secondary Sizes for content */
     .primary {
         max-width: 70vw;
@@ -228,32 +178,17 @@ b {
         max-width: 95vw;
         min-width: 360px;
     }
-    @media (prefers-color-scheme: dark) { /* Dark Mode */
-        /* Hover link */
-        .link:hover {
-            color:white;
-        }
-        .link {
-            color: white;
-        }
-        /* Bold Hover */
-        b:hover {
-            background-color: white;
-            color: black;
-        }
-    }
     .card {
         width: 14rem;
     }
     .projectCard {
         margin: 0 15px 15px 0;
-    }
-        
+    }    
     #projectTileList {
         justify-content: center;
     }
 }
-/* For Smallest Screens */
+/* == SMALL SCREENS ==*/
 @media only screen and (max-width: 550px) { 
     /* Main Block Margins */
     .main {
@@ -289,7 +224,6 @@ b {
     .small {
         font-size: .9em;
     }
-
     .card {
         max-width: 70vw;
         width: 18rem;
@@ -301,4 +235,20 @@ b {
         margin: 0 auto;
         justify-content: left;
     }
+}
+
+/* == DARK MODE == */
+@media (prefers-color-scheme: dark) {
+    .body, body, main {
+        background-color: #1b1b1b;
+        color: white;
+    }
+    .link {
+        color: white;
+    }
+    b:hover { /* Hover Bold */
+        background-color: white;
+        color: black;
+    }
+    
 }

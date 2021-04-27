@@ -13,6 +13,7 @@ hv.emojiElement = document.getElementById("emoji");
 window.onscroll = function(){
     if(window.scrollY > 10){
         let newEmoji = hv.emojis[Math.floor(Math.round(Math.random()*hv.emojis.length-1))];
+        if(newEmoji == undefined) newEmoji = "💥";
         hv.emojiElement.innerHTML = newEmoji;
     } else if(window.scrollY < 5) {
         hv.emojiElement.innerHTML = "👋";

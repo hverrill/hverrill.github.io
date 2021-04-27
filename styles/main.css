@@ -154,15 +154,15 @@ b {
     }
     /* Primary and Secondary Sizes for content */
     .primary {
-        max-width: 70vw;
+        max-width: 80vw;
         margin: 0 auto;
     }
     .secondary {
-        max-width: 65vw;
+        max-width: 70vw;
         margin: 0 auto;
     }
     .wide {
-        max-width: 70vw;
+        max-width: 80vw;
     }
 
     /* Project Card Rules */
@@ -187,10 +187,10 @@ b {
     }
     /* Primary and Secondary Sizes for content */
     .primary {
-        max-width: 70vw;
+        max-width: 80vw;
     }
     .secondary {
-        max-width: 65vw;
+        max-width: 70vw;
     }
     .wide {
         max-width: 80vw;

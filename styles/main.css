@@ -1,9 +1,42 @@
-
+/* Fonts */
+@font-face {
+    font-family: 'Calibri Light';
+    src: url('assets/fonts/calibril.ttf')  format('truetype');
+}
 /* UNIVERSAL RULES */
 .body, body, main {
     background-color: white;
     color: black;
-    font-family: 'Consolas', monospace, 'Lucida Console', 'Courier New', 'Courier', Arial, sans-serif;
+    font-family: 'Calibri Light', serif, sans-serif;
+    font-weight: lighter;
+    /* 'Consolas',monospace, 'Lucida Console', 'Courier', Arial,  */
+}
+.bg { /* Asset and css from https://codepen.io/iceable/pen/yLBrZOd !*/
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .3;
+    visibility: visible;
+}          
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
 }
 p {
     margin-top: .9em;
@@ -81,6 +114,7 @@ b:hover {
 }
 b {
     font-size: 105%;
+    font-weight: normal;
 }
 @media (prefers-color-scheme: dark) { /* Dark Mode */
     .body, body, main {
@@ -183,10 +217,12 @@ b {
     .primary {
         max-width: 70vw;
         min-width: 330px;
+        margin: 0 auto;
     }
     .secondary {
         max-width: 65vw;
         min-width: 300px;
+        margin: 0 auto;
     }
     .wide {
         max-width: 95vw;
@@ -230,20 +266,14 @@ b {
     .primary {
         max-width: 70vw;
         min-width: 270px;
-        margin: 0;
-        padding: 0;
     }
     .secondary {
         max-width: 65vw;
         min-width: 280px;
-        margin: 0;
-        padding: 0;
     }
     .wide {
         max-width: 90vw;
         min-width: 300px;
-        margin: 0;
-        padding: 0;
     }
 
     /* Custom Font Sizes */
@@ -264,7 +294,11 @@ b {
         max-width: 70vw;
         width: 18rem;
     }
+    .projectCard{
+        margin: 7px auto;
+    }
     #projectTileList {
+        margin: 0 auto;
         justify-content: left;
     }
 }

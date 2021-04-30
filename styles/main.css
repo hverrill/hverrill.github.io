@@ -12,7 +12,7 @@
 }
 /* Fonts */
 @font-face {
-    font-family: 'Calibri Light', Verdana, Tahoma, sans-serif;
+    font-family: 'Calibri Light';
     src: url('assets/fonts/calibril.ttf') format('truetype');
 }
 
@@ -20,7 +20,7 @@
 .body, body, main {
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: 'Calibri Light', serif, sans-serif;
+    font-family: 'Calibri Light', Verdana, Tahoma, serif, sans-serif;
     font-weight: lighter;
 }
 .link { 

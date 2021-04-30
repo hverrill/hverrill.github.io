@@ -1,35 +1,35 @@
-/* TODO: create global color variables
-    TODO: change those variable for dark mode using media query 
-    
-    
-    
-    
-    */
-
-
-
-
-
-
+/* == LIGHT MODE == */
+:root {
+    --text-color: black;
+    --background-color: #f3f3f3;
+}
+/* == DARK MODE == */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: white;
+        --background-color: #1b1b1b;
+    }
+}
 /* Fonts */
 @font-face {
     font-family: 'Calibri Light';
     src: url('assets/fonts/calibril.ttf') format('truetype');
 }
+
 /* == UNIVERSAL RULES ==*/
 .body, body, main {
-    background-color: white;
-    color: black;
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: 'Calibri Light', serif, sans-serif;
     font-weight: lighter;
 }
 .link { 
     font-size: 105%;
     text-decoration: underline;
-    color: black;
+    color: var(--text-color);
 }
 .link:hover {
-    color:black;
+    color: var(--text-color);
 }
 b {
     font-size: 105%;
@@ -118,13 +118,12 @@ b {
 }
 .footer {
     margin: 10px 20px;
-    background-color: #1b1b1b;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .footContent{
-
+    /* tbd */
 }
 .big { 
     font-size: 1.7em;
@@ -140,21 +139,14 @@ b {
     background-color: transparent;
 }
 
-
 /* Project Card Rules */
 .card { 
-    /* width: 30%; */
     color: black;
 }
 .projectCard {
-    /* width: 30%; */
     margin: 0 0 15px 15px;
 }
-/* Remove underline from card links */
-.projectCard:link { text-decoration: none; }
-.projectCard:visited { text-decoration: none; }
-.projectCard:hover { text-decoration: none; }
-.projectCard:active { text-decoration: none; }
+/* Flexbox Card Alignment */
 #projectCardList {
     display: flex;
     flex-wrap: wrap;
@@ -170,6 +162,12 @@ b {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+/* Remove underline from card links */
+.projectCard:link { text-decoration: none; }
+.projectCard:visited { text-decoration: none; }
+.projectCard:hover { text-decoration: none; }
+.projectCard:active { text-decoration: none; }
+
 
 /* MEDIUM SCREENS */
 @media only screen and (max-width: 1200px) {
@@ -211,11 +209,6 @@ b {
     .projectCard {
         margin: 0 12px 12px 0;
     }   
-    #projectCardList {
-        /* margin: 0 auto; */
-        /* justify-content: center; */
-    }
-
 }
 /* == SMALL SCREENS ==*/
 @media only screen and (max-width: 780px) { 
@@ -260,18 +253,5 @@ b {
         justify-content: center;
     }
 }
-/* == DARK MODE == */
-@media (prefers-color-scheme: dark) {
-    .body, body, main {
-        background-color: #1b1b1b;
-        color: white;
-    }
-    .link {
-        color: white;
-    }
-    .link:hover {
-        color: white;
-    }
-    
-}
+
 

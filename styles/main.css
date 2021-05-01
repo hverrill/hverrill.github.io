@@ -9,6 +9,9 @@
         --text-color: white;
         --background-color: #1b1b1b;
     }
+    .main {
+        text-shadow: 1px 1px 2px black;
+    }
 }
 /* Fonts */
 @font-face {
@@ -16,10 +19,7 @@
     src: 
     url('assets/fonts/calibril.ttf') format('truetype'),
     url('assets/fonts/calibril.otf') format('opentype'),
-    url('assets/fonts/calibril.svg') format('svg');
-
-     
-    
+    url('assets/fonts/calibril.svg') format('svg');   
 }
 
 /* == UNIVERSAL RULES == */
@@ -43,6 +43,15 @@ b {
 }
 #top { /* To push down top block of content */
     margin-top: 5em;
+}
+/* Hide Scrollbar */
+html::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .bg { /* Asset and css from https://codepen.io/iceable/pen/yLBrZOd! */
@@ -159,6 +168,7 @@ b {
     justify-content: flex-start;
     max-width: 70vw;
     margin: 0 15px;
+    text-shadow: none;
 }
 .column {
     max-width: 33.333%;

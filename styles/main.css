@@ -13,7 +13,13 @@
 /* Fonts */
 @font-face {
     font-family: 'Calibri Light';
-    src: url('assets/fonts/calibril.ttf') format('truetype');
+    src: 
+    url('assets/fonts/calibril.ttf') format('truetype'),
+    url('assets/fonts/calibril.otf') format('opentype'),
+    url('assets/fonts/calibril.svg') format('svg');
+
+     
+    
 }
 
 /* == UNIVERSAL RULES == */

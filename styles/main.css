@@ -116,7 +116,6 @@ html {
 }
 /* End animation css! */
 
-
 /* == LARGE SCREENS == */
 /* Primary, Secondary, and Wide Sizes for content */
 .primary {
@@ -153,7 +152,6 @@ html {
     margin: 2vw auto 3vw 7vw;
     background-color: transparent;
 }
-
 /* Project Card Rules */
 .card { 
     color: black;
@@ -175,7 +173,6 @@ html {
 .projectCard:hover { text-decoration: none; }
 .projectCard:active { text-decoration: none; }
 
-
 /* MEDIUM SCREENS */
 @media only screen and (max-width: 1080px) {
     .bar { /* Navbar */
@@ -189,7 +186,6 @@ html {
     .main { /* Content Alignment */
         margin: 2em 8vw;
     }   
-    
     /* Custom Font Sizes */
     .header { 
         font-size: 2.4em;
@@ -253,5 +249,3 @@ html {
         margin: 0 auto;
     }
 }
-
-

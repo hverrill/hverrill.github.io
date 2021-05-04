@@ -159,26 +159,17 @@ html {
     color: black;
 }
 .projectCard {
-    margin: 0 0 15px 15px;
+    display: inline-block;
+    margin-bottom: 15px;
 }
-/* Flexbox Card Alignment */
 #projectCardList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    text-shadow: none;
+    column-count: 3;
     max-width: 70vw;
     margin: 0 15px;
-    text-shadow: none;
+    column-gap: 15px;
 }
-.column {
-    max-width: 33.333%;
-    display: flex;
-    flex: 33.3333%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-/* Remove underline from card links */
+/* Remove underline from href card links */
 .projectCard:link { text-decoration: none; }
 .projectCard:visited { text-decoration: none; }
 .projectCard:hover { text-decoration: none; }
@@ -186,7 +177,7 @@ html {
 
 
 /* MEDIUM SCREENS */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1080px) {
     .bar { /* Navbar */
         height: 60px; 
     }
@@ -222,12 +213,12 @@ html {
         margin: 0 auto;
     }
     /* Project Card Rules */
-    .projectCard {
-        margin: 0 12px 12px 0;
-    }   
+    #projectCardList {
+        columns: 2;
+    }
 }
 /* == SMALL SCREENS ==*/
-@media only screen and (max-width: 780px) { 
+@media only screen and (max-width: 750px) { 
     /* Main Block Margins */
     .main { /* Content Alignment */
         margin: 2em 5vw;
@@ -256,17 +247,10 @@ html {
         font-size: .9em;
     }
     /* Project Card Rules */
-    .projectCard{
-        margin: 7px auto;
-    }
     #projectCardList {
-        margin: 0 auto;
+        columns: 1;
         max-width: 80vw;
-    }
-    .column {
-        flex: 100%;
-        max-width: 100%;
-        justify-content: center;
+        margin: 0 auto;
     }
 }
 

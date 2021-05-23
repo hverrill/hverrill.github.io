@@ -1,2 +1,2 @@
 # Henry Verrill's Website
-Will be updated as I learn more web development!
+Come check out my website! I think it's pretty cool!

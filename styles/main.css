@@ -156,6 +156,10 @@ html {
 .card { 
     color: black;
 }
+div.card-footer {
+    padding: .5rem .75rem 0.1rem;
+    text-align: center;
+}
 .projectCard {
     display: inline-block;
     margin-bottom: 15px;

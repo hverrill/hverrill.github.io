@@ -4,7 +4,7 @@
     --background-color: #f3f3f3;
 }
 /* == DARK MODE == */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root {
         --text-color: white;
         --background-color: #1b1b1b;
@@ -12,7 +12,7 @@
     .main {
         text-shadow: 1px 1px 2px black;
     }
-} */
+}
 /* Fonts */
 @font-face {
     font-family: 'Calibri Light';
@@ -191,6 +191,12 @@ header {
 .cardButtons > .btn {
     /* background: linear-gradient(70deg, #ff4a00, #ff0075); */
     margin: 0px 15px 10px;
+}
+/* Abstract Page Images */
+.image {
+    max-width: 600px;
+    margin: 0px 0px 1em 20px;
+    filter: drop-shadow(2px 2px 2px #00000054);
 }
 
 

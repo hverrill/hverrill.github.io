@@ -9,10 +9,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
-        <link rel="icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/bootstrap-material-design.min.css">
+        <link rel="icon" href="../assets/favicon.png">
     </head>
     <body class="body">
         <header>
@@ -23,35 +23,34 @@
                 <a href="\contact.html" class="btn">Contact</a>
             </div>
         </header>
-        <main class="main" id="top">
-            
-            
+        <main class="main" id="top">            
             <!-- The introduction. Says my name and a short one-liner -->
-            <div id="intro" class="header primary">
+            <div id="title" class="header primary">
                 <p> 
-                    About Me
+                    FIRST Robotics
                 </p>
             </div>
+            <img class="image" src="../assets/first.jpg" alt="">
             <!-- The about me. This talks a bit more about myself. -->
-            <div id="aboutMe" class="medium primary">
+            <div id="abstract" class="medium primary">
                 <p>
-                    <a class="link" href="https://www.rose-hulman.edu/">Rose-Hulman Institute of Technology</a> <br>
-                    B.S. Software Engineering <br>
-                    Class of 2024
+                    For this project, I collaborated with a team of other students to make a pathfinding application from scratch. The goal was to use one of two graph-based pathfinding algorithms and create a map navigation tool.
                 </p>
                 <p>
-                    When I turned 14, I found my first coding course online. It was rudimentary, but through it, I came to learn Java. Ever since, I've been glued to computers. Nearly everything in our world today runs on software. We’ve become smarter, faster, and more efficient. From my perspective, this productivity has come at the cost of happiness. It is my wish and goal to apply economics and human behavior to the field of software, so that the next generation of software makes us and life on earth smarter, faster, more efficient, <i>and</i> happier.
+                    Over the course of three weeks, me and the ironically named “Team Flat Earth”: Jaden Rigg and Nathan Loafman, worked together to create an application that would find the best flight path to and from any major airport in the world. As this application was made during the pandemic, we met for team meetings virtually most of the time. As a team, we were responsible for keeping track of meeting minutes, member responsibilities, a final presentation showing off our application, and creating the application in Java from scratch.
+                </p>
+                <p>
+                    We had many design and logistical problems. One of our original team members didn’t end up contributing, and we had to redistribute the workload. We had problems with making sure every team member was working with the same version of code.
+                </p>
+                <p>
+                    Technically, the application uses Dijkstra's algorithm to find the best route between airport locations. We used an XML document with a list of all major airports and their locations. The distance between each airport is calculated spherically, but the locations are displayed on a flat map. The application can calculate the total distance traveled and time traveled for any two locations. 
                 </p>
             </div>
             <!-- Link to the resume page. May relocate. -->
-            <div id="resume" class="big primary">
+            <!-- <div id="resume" class="big primary">
                 <p>Interested in my stats? Click <a class="link" href="assets/resume_color.pdf">here</a> to view my resume.</p>
-            </div>
-
-            
-            
+            </div> -->
         </main>
-
         <footer>
             <div class="footer">
                 <!-- <div class="footContent" id="contact">
@@ -73,7 +72,7 @@
         <div class="bg"></div>
         <div class="bottomBar"></div>
     </body>
-    <script src="scripts/bootstrap-material-design.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/bootstrap-material-design.js"></script>
+    <script src="../scripts/main.js"></script>
     <style></style>
 </html>

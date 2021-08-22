@@ -279,6 +279,10 @@ div.card-footer {
     #projectCardList {
         columns: 2;
     }
+    /* Abstract Page Images */
+    .image {
+        max-width: 500px;
+    }
 }
 /* == SMALL SCREENS ==*/
 @media only screen and (max-width: 750px) { 
@@ -315,6 +319,12 @@ div.card-footer {
         max-width: 80vw;
         margin: 0 auto;
     }
+    /* Abstract Page Images */
+    .image {
+        max-width: 350px;
+    }
+
+    /* Nav Bar */
     header {
         margin: 0;
     }

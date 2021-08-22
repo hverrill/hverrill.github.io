@@ -101,6 +101,9 @@ html {
     animation: BottomBar 20s ease infinite;
 
     height: 20px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
 }
 @-webkit-keyframes BottomBar {
     0%{background-position:99% 0%}
@@ -162,7 +165,7 @@ header {
     padding: 10px 20px;
     text-decoration:none;
     letter-spacing:2px;
-    margin: 20px 0 20px 0;
+    margin: 20px 2px;
     text-transform:uppercase;
     position: relative;
     color: var(--text-color);
@@ -174,7 +177,7 @@ header {
     background: rgba(0, 0, 0, 0.4);
     background: #fff;
     padding: 20px 20px;
-    margin: 0;
+    margin: 0px 2px;
     color: #1b1b1b;
 }
 
@@ -284,7 +287,7 @@ div.card-footer {
         font-size: 1.6em;
     }
     .medium {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
     .small {
         font-size: .9em;
@@ -294,5 +297,22 @@ div.card-footer {
         columns: 1;
         max-width: 80vw;
         margin: 0 auto;
+    }
+    header {
+        margin: 0;
+    }
+    .bar {
+        text-align: center;
+        margin: auto;
+    }
+    .bar > .btn{
+        font-size: .9em;
+        letter-spacing: 0px;
+        padding: 10px 12px;
+        margin: 15px 1px;
+    }
+    .bar > .btn:hover{
+        padding: 15px 12px;
+        margin: 0px 1px;
     }
 }

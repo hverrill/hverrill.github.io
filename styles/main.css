@@ -4,7 +4,7 @@
     --background-color: #f3f3f3;
 }
 /* == DARK MODE == */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --text-color: white;
         --background-color: #1b1b1b;
@@ -12,7 +12,7 @@
     .main {
         text-shadow: 1px 1px 2px black;
     }
-}
+} */
 /* Fonts */
 @font-face {
     font-family: 'Calibri Light';
@@ -61,7 +61,6 @@ html {
 	-moz-transition-property: all;
   -moz-transition-timing-function: cubic-bezier(100,50,21,6);
 }
-
 .bg { /* Asset and css from https://codepen.io/iceable/pen/yLBrZOd! */
     position: fixed;
     top: -50%;
@@ -102,7 +101,8 @@ html {
 
     height: 20px;
     width: 100vw;
-    position: fixed;
+    position: static;
+    margin-top: auto;
     bottom: 0px;
 }
 @-webkit-keyframes BottomBar {
@@ -137,16 +137,22 @@ html {
     max-width: 82vw;
     margin: 0 30px 0 20px;
 }
+
 /* Custom Font Sizes */
 .header { 
     font-size: 2.5em;
 }
-.footer {
-    margin: 10px 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.big { 
+    font-size: 1.7em;
 }
+.medium {
+    font-size: 1.5em;
+}
+.small {
+    font-size: 1.3em;
+}
+
+/* Header and Navbar */
 .bar {
     color: var(--text-color);
     margin-left: 20px;
@@ -154,12 +160,10 @@ html {
     position: relative;
     
 }
-
 header {
     margin-left: 7vw;
     z-index: 999;
 }
-
 .bar > .btn{
     background:rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
@@ -171,7 +175,6 @@ header {
     color: var(--text-color);
     top: 20px;
 }
-
 .bar > .btn:hover{
     border:none;
     background: rgba(0, 0, 0, 0.4);
@@ -181,23 +184,31 @@ header {
     color: #1b1b1b;
 }
 
+/* Card Buttons */
+.cardButtons {
+    text-align: center;
+}
+.cardButtons > .btn {
+    /* background: linear-gradient(70deg, #ff4a00, #ff0075); */
+    margin: 0px 15px 10px;
+}
+
 
 .footContent{
     /* tbd */
 }
-.big { 
-    font-size: 1.7em;
+.footer {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.medium {
-    font-size: 1.5em;
-}
-.small {
-    font-size: 1.3em;
-}
+
 .main { /* Content Alignment */
     margin: 2vw auto 3vw 7vw;
     background-color: transparent;
 }
+
 /* Project Card Rules */
 .card { 
     color: black;

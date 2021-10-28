@@ -5,9 +5,8 @@
 
 /** namespace. */
 var hv = hv || {};
-var fn = require('fn');
 var marked = require('marked');
-var blog_files = fn.readdirSync('/blog/');
+var blog_files = fs.readdirSync('/blog/');
 
 
 /** globals */

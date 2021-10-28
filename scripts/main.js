@@ -8,7 +8,7 @@ var hv = hv || {};
 try {
     var fs = require('fs');
 } catch (error) {
-    console.log(error);
+    console.log("FS Error: ", error);
 }
 
 var marked = require('marked');

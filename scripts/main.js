@@ -5,8 +5,9 @@
 
 /** namespace. */
 var hv = hv || {};
+
 try {
-    var fs = require('fs');
+    import * as fs from 'fs';
 } catch (error) {
     console.log("FS Error: ", error);
 }

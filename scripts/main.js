@@ -20,19 +20,19 @@ window.onscroll = function(){
     }
 }
 
-hv.processFiles(() => {
+hv.processFiles = () => {
     var filelist = document.getElementById('files').files;
     filelist.forEach((file) => {
         hv.writefiles(file);
     });
-});
-hv.writefiles((file) => {
+};
+hv.writefiles = (file) => {
     var reader = new FileReader();
     reader.onload = () => {
         document.getElementById('mdcontent').innerHTML += marked(reader.result);
     }
     reader.readAsText(file, "UTF-8");
-});
+};
 
     
 

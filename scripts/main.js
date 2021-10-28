@@ -19,9 +19,6 @@ window.onscroll = function(){
         hv.emojiElement.innerHTML = "👋";
     }
 }
-hv.render_blog_post((blog_post) => {
-    
-});
 
 hv.processFiles(() => {
     var filelist = document.getElementById('files').files;

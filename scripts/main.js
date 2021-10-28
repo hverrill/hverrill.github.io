@@ -66,6 +66,7 @@ hv.writefiles = (file) => {
 /* Main */
 hv.main = function () {
 	console.log("Hello World!");
+    hv.processFiles();
     // hv.read();
     // hv.counter++;
     // hv.write();

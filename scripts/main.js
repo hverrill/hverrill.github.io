@@ -43,10 +43,10 @@ window.onscroll = function(){
 hv.processFiles = () => {
     var filelist = fs.readdirSync('https://hverrill.github.io/blog/');
     console.log(filelist.size());
-    filelist.forEach((file) => {
-        console.log("FILE: ", file);
-        hv.writefiles(file);
-    });
+    // filelist.forEach((file) => {
+    //     console.log("FILE: ", file);
+    //     hv.writefiles(file);
+    // });
 };
 hv.writefiles = (file) => {
     fs.open(file);

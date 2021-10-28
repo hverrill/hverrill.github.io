@@ -88,9 +88,10 @@ hv.writefiles = (file) => {
 /* Main */
 hv.main = function () {
 	console.log("Hello World!");
-    document.getElementById('mdcontent').innerHTML += marked(fs.readFile("https://hverrill.github.io/blog/test.md", (error) => {
-        if (error) throw err;
-    }));
+    
+    fs.readFile("https://hverrill.github.io/blog/test.md", (err, data) => {
+        document.getElementById('mdcontent').innerHTML += marked(data);
+    });
     hv.processFiles();
     // hv.read();
     // hv.counter++;

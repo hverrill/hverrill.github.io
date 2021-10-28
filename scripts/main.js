@@ -23,7 +23,7 @@
 
 /** namespace. */
 var hv = hv || {};
-var marked = require('marked');
+// var marked = require('marked');
 var md = require('markdown-it')();
 var fs = require('fs');
 
@@ -92,7 +92,7 @@ hv.main = function () {
 	console.log("Hello World!");
     
     fs.readFile("https://hverrill.github.io/blog/test.md", (err, data) => {
-        document.getElementById('mdcontent').innerHTML += marked.parse(data);
+        document.getElementById('mdcontent').innerHTML += md.render(data);
     });
     hv.processFiles();
     // hv.read();

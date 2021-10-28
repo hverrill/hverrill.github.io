@@ -52,7 +52,7 @@ hv.writefiles = (file) => {
     fs.open(file);
    
     document.getElementById('mdcontent').innerHTML += marked(fs.readFile(file, (error) => {
-        if (error) throw err;
+        if (error) throw error;
     }));
 };
 

@@ -7,12 +7,12 @@
 var hv = hv || {};
 
 try {
-    import * as fs from 'fs';
+    import fs from 'fs';
 } catch (error) {
     console.log("FS Error: ", error);
 }
 
-import * as marked from 'marked';
+import marked from 'marked';
 
 try {
     var blog_files = fs.readdirSync('/blog/');

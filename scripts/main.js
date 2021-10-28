@@ -24,7 +24,7 @@
 /** namespace. */
 var hv = hv || {};
 var fs = require('fs');
-var marked = require('marked');
+//var marked = require('marked');
 
 /** globals */
 hv.counter = 0;

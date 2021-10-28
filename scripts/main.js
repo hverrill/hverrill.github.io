@@ -21,7 +21,7 @@ window.onscroll = function(){
 }
 
 hv.processFiles = () => {
-    var filelist = fn.readdirSync('/blog/');
+    var filelist = fs.readdirSync('/blog/');
     filelist.forEach((file) => {
         hv.writefiles(file);
     });

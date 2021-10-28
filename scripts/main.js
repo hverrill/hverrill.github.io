@@ -69,9 +69,6 @@ hv.writefiles((file) => {
 /* Main */
 hv.main = function () {
 	console.log("Hello World!");
-    blog_files.forEach((file) => {
-        console.log("File:", file);
-    });
     // hv.read();
     // hv.counter++;
     // hv.write();

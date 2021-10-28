@@ -5,8 +5,8 @@
 
 /** namespace. */
 var hv = hv || {};
-var fs = require('fs');
-var marked = require('marked');
+import * as fs from 'fs';
+import * as marked from 'marked';
 var blog_files = fs.readdirSync('/blog/');
 
 

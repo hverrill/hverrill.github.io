@@ -41,7 +41,7 @@ window.onscroll = function(){
 }
 
 hv.processFiles = () => {
-    var filelist = fs.readdirSync('https://hverrill.github.io/blog/');
+    //var filelist = fs.readdirSync('https://hverrill.github.io/blog/');
     //console.log(filelist.size());
     // filelist.forEach((file) => {
     //     console.log("FILE: ", file);
@@ -88,6 +88,9 @@ hv.writefiles = (file) => {
 /* Main */
 hv.main = function () {
 	console.log("Hello World!");
+    document.getElementById('mdcontent').innerHTML += marked(fs.readFile("https://hverrill.github.io/blog/test.md", (error) => {
+        if (error) throw err;
+    }));
     hv.processFiles();
     // hv.read();
     // hv.counter++;

@@ -12,7 +12,7 @@ try {
     console.log("FS Error: ", error);
 }
 
-var marked = require('marked');
+import * as marked from 'marked';
 
 try {
     var blog_files = fs.readdirSync('/blog/');

@@ -9,7 +9,12 @@ window.$ = window.jQuery = require('jquery'); // not sure if you need this at al
 
 var fs = require('fs');
 var marked = require('marked');
-var blog_files = fs.readdirSync('/blog/');
+try {
+    var blog_files = fs.readdirSync('/blog/');
+} catch (error) {
+    console.log(error);
+}
+
 
 
 /** globals */

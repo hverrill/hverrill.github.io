@@ -93,9 +93,9 @@ hv.writefiles = (file) => {
 /* Main */
 hv.main = function () {
 	console.log("Hello World!");
-    fs.open("https://hverrill.github.io/blog/test.md");
-    console.log(fs.read);
-    document.getElementById('mdcontent').innerHTML += md.render();
+    fs.open();
+    console.log(fs.readFile("https://hverrill.github.io/blog/test.md"));
+    document.getElementById('mdcontent').innerHTML += md.render("hi");
 
     hv.processFiles();
     // hv.read();

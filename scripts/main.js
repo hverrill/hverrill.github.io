@@ -5,16 +5,19 @@
 
 /** namespace. */
 var hv = hv || {};
-window.$ = window.jQuery = require('jquery'); // not sure if you need this at all
+try {
+    var fs = require('fs');
+} catch (error) {
+    console.log(error);
+}
 
-var fs = require('fs');
 var marked = require('marked');
+
 try {
     var blog_files = fs.readdirSync('/blog/');
 } catch (error) {
     console.log(error);
 }
-
 
 
 /** globals */

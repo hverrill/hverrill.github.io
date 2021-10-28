@@ -5,9 +5,9 @@
 
 /** namespace. */
 var hv = hv || {};
-var fs = require('fs');
-var marked = require('marked');
-var blog_files = fs.readdirSync('/blog/');
+import { readdirSync } from 'fs';
+import marked from 'marked';
+var blog_files = readdirSync('/blog/');
 
 
 /** globals */
@@ -57,7 +57,9 @@ hv.render_blog_post((blog_post) => {
 /* Main */
 hv.main = function () {
 	console.log("Hello World!");
-    console.log(blog_files);
+    blog_files.forEach((file) => {
+        console.log("File:", file);
+    });
     // hv.read();
     // hv.counter++;
     // hv.write();

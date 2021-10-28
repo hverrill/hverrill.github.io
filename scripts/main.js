@@ -49,10 +49,11 @@ hv.processFiles = () => {
     });
 };
 hv.writefiles = (file) => {
-    var reader = new FileReader();
-    reader.onload = () => {
-        document.getElementById('mdcontent').innerHTML += marked(reader.readAsText(file, "UTF-8"));
-    }
+    fs.open(file);
+   
+    document.getElementById('mdcontent').innerHTML += marked(fs.readFile(file, (error) => {
+        if (error) throw err;
+    }));
 };
 
     

@@ -41,7 +41,7 @@ window.onscroll = function(){
 }
 
 hv.processFiles = () => {
-    var filelist = fs.readdirSync('/../blog/');
+    var filelist = fs.readdirSync('./blog/');
     console.log(filelist.size());
     filelist.forEach((file) => {
         console.log("FILE: ", file);

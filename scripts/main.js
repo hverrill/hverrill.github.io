@@ -24,7 +24,7 @@
 /** namespace. */
 var hv = hv || {};
 var fs = require('fs');
-//var marked = require('marked');
+var marked = require('marked');
 
 /** globals */
 hv.counter = 0;
@@ -90,7 +90,7 @@ hv.main = function () {
 	console.log("Hello World!");
     
     fs.readFile("https://hverrill.github.io/blog/test.md", (err, data) => {
-        document.getElementById('mdcontent').innerHTML += marked(data);
+        document.getElementById('mdcontent').innerHTML += marked.parse(data);
     });
     hv.processFiles();
     // hv.read();

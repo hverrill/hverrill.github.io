@@ -7,12 +7,14 @@
 var hv = hv || {};
 
 try {
-    import * as fs from 'fs';
+    //import * as fs from 'fs';
+    var fs = require('fs');
 } catch (error) {
     console.log("FS Error: ", error);
 }
 try {
-    import * as marked from 'marked';;
+    //import * as marked from 'marked';
+    var marked = require('marked');
 } catch (error) {
     console.log(error);
 }

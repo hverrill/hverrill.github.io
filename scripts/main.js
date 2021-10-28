@@ -5,9 +5,9 @@
 
 /** namespace. */
 var hv = hv || {};
-import { readdirSync } from 'fs';
-import marked from 'marked';
-var blog_files = readdirSync('/blog/');
+var fs = require('fs');
+var marked = require('marked');
+var blog_files = fs.readdirSync('/blog/');
 
 
 /** globals */

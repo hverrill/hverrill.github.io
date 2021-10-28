@@ -11,8 +11,13 @@ try {
 } catch (error) {
     console.log("FS Error: ", error);
 }
+try {
+    import * as marked from 'marked';;
+} catch (error) {
+    console.log(error);
+}
 
-import * as marked from 'marked';
+
 
 try {
     var blog_files = fs.readdirSync('/blog/');

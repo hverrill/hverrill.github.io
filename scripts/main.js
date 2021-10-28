@@ -6,28 +6,6 @@
 /** namespace. */
 var hv = hv || {};
 
-try {
-    //import * as fs from 'fs';
-    var fs = require('fs');
-} catch (error) {
-    console.log("FS Error: ", error);
-}
-try {
-    //import * as marked from 'marked';
-    var marked = require('marked');
-} catch (error) {
-    console.log(error);
-}
-
-
-
-try {
-    var blog_files = fs.readdirSync('/blog/');
-} catch (error) {
-    console.log(error);
-}
-
-
 /** globals */
 hv.counter = 0;
 hv.emojis = ["😁","😋","🤨","🤖","💥","👌","🤟","👏","🤝","🦾","🧠","👀","🦍","🐈","🍚","🌌","⚡","👘","💎","📜","💰","📝","🧻"];
@@ -44,6 +22,22 @@ window.onscroll = function(){
 hv.render_blog_post((blog_post) => {
     
 });
+
+hv.processFiles(() => {
+    var filelist = document.getElementById('files').files;
+    filelist.forEach((file) => {
+        hv.writefiles(file);
+    });
+});
+hv.writefiles((file) => {
+    var reader = new FileReader();
+    reader.onload = () => {
+        document.getElementById('mdcontent').innerHTML += marked(reader.result);
+    }
+    reader.readAsText(file, "UTF-8");
+});
+
+    
 
 /** Functions */
 // hv.write((count) => {

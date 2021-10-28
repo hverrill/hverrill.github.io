@@ -10,6 +10,7 @@
 // You can pass in an arbitrary object if you do not wish to pollute
 // the global namespace.
 BrowserFS.install(window);
+
 // Configures BrowserFS to use the LocalStorage file system.
 BrowserFS.configure({
 fs: "LocalStorage"
@@ -26,8 +27,7 @@ if (e) {
 var hv = hv || {};
 
 // var marked = require('marked');
-var MarkdownIt = require('markdown-it'),
-    md = new MarkdownIt();
+var md = window.markdownit();
 var fs = require('fs');
 
 

@@ -5,6 +5,8 @@
 
 /** namespace. */
 var hv = hv || {};
+window.$ = window.jQuery = require('jquery'); // not sure if you need this at all
+window.Bootstrap = require('bootstrap');
 var fs = require('fs');
 var marked = require('marked');
 var blog_files = fs.readdirSync('/blog/');

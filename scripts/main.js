@@ -49,9 +49,11 @@ hv.processFiles = () => {
     // });
 };
 hv.writefiles = (file) => {
-    fs.open(file);
+    // fs.open(file);
    
-    document.getElementById('mdcontent').innerHTML += marked(fs.readFile(file));
+    fs.readFile(file, (err, data) => {
+        document.getElementById('mdcontent').innerHTML += marked(data);
+    });
 };
 
     

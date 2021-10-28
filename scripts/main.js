@@ -51,9 +51,7 @@ hv.processFiles = () => {
 hv.writefiles = (file) => {
     fs.open(file);
    
-    document.getElementById('mdcontent').innerHTML += marked(fs.readFile(file, (error) => {
-        if (error) throw error;
-    }));
+    document.getElementById('mdcontent').innerHTML += marked(fs.readFile(file));
 };
 
     

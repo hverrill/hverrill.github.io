@@ -51,9 +51,8 @@ hv.processFiles = () => {
 hv.writefiles = (file) => {
     var reader = new FileReader();
     reader.onload = () => {
-        document.getElementById('mdcontent').innerHTML += marked(reader.result);
+        document.getElementById('mdcontent').innerHTML += marked(reader.readAsText(file, "UTF-8"));
     }
-    reader.readAsText(file, "UTF-8");
 };
 
     

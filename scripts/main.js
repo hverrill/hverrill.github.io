@@ -5,6 +5,10 @@
 
 /** namespace. */
 var hv = hv || {};
+var fs = require('fs');
+var marked = require('marked');
+var blog_files = fs.readdirSync('/blog/');
+
 
 /** globals */
 hv.counter = 0;
@@ -19,6 +23,9 @@ window.onscroll = function(){
         hv.emojiElement.innerHTML = "👋";
     }
 }
+hv.render_blog_post((blog_post) => {
+    
+});
 
 /** Functions */
 // hv.write((count) => {
@@ -50,7 +57,7 @@ window.onscroll = function(){
 /* Main */
 hv.main = function () {
 	console.log("Hello World!");
-
+    console.log(blog_files);
     // hv.read();
     // hv.counter++;
     // hv.write();

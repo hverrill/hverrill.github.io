@@ -25,23 +25,35 @@
             </div>
         </header>
         <main class="main" id="top">
-            <div class="large header primary">
-                <p>
-                    <a class="link" href="https://rosehulman.campusgroups.com/login_only">Campus Groups</a>
-                </p>
-                <p>
-                    <a class="link" href="https://rosehulman.sharepoint.com/sites/myrh">My Rose Hulman</a>
-                </p>
-                <p>
-                    <a class="link" href="https://moodle.rose-hulman.edu/login/index.php">Moodle</a>
-                </p>
-                <p>
-                    <a class="link" href="https://login.pearson.com/v1/piapi/piui/signin?client_id=dN4bOBG0sGO9c9HADrifwQeqma5vjREy&okurl=https:%2F%2Fportal.mypearson.com%2Fcourse-home&siteid=8313">Pearson</a>
-                </p>
-                <p>
-                    <a class="link" href="https://mail.protonmail.com/u/0/inbox">Protonmail</a>
-                </p>
+            
+            <div id="mdcontent"></div>
+            <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+            <script>
+                document.getElementById('mdcontent').innerHTML =
+                marked('# Marked in browser\n\nRendered by **marked**.');
+            </script>
+            
+            
         </main>
+
+        <footer>
+            <div class="footer">
+                <!-- <div class="footContent" id="contact">
+                    <p class="big"> Contact Me:</p>
+                    <div id="contact" class="small primary">
+                        Cell: <b>(678)-994-9460</b> <br>
+                        School Email: <a class="link" href="mailto:verrilhn&#64rose-hulman.edu">verrilhn (at) rose-hulman.edu</a><br>
+                        Personal Email: <a  class="link" href="mailto:hverrill&#64protonmail.com">hverrill (at) protonmail.com</a><br> 
+                        Address: <br>
+                        5500 Wabash Avenue CM 2008 <br>
+                        Terre Haute, Indiana 47803 <br>
+                    </div>
+                </div> -->
+                <div class="footContent">
+                    <p class="small">Copyright Henry Verrill</p>
+                </div>
+            </div>
+        </footer>
         <div class="bg"></div>
         <div class="bottomBar"></div>
     </body>

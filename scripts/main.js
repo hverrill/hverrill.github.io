@@ -23,8 +23,10 @@
 
 /** namespace. */
 var hv = hv || {};
-var fs = require('fs');
 var marked = require('marked');
+var md = require('markdown-it')();
+var fs = require('fs');
+
 
 /** globals */
 hv.counter = 0;

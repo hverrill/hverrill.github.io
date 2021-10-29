@@ -93,7 +93,7 @@ hv.writefiles = (file) => {
 /* Main */
 hv.main = function () {
 	console.log("Hello World!");
-    var reader = FileReader();
+    var reader = new FileReader();
     var text = reader.readAsText("./blog/test.md");
     console.log(text);
     document.getElementById('mdcontent').innerHTML += md.render(text);

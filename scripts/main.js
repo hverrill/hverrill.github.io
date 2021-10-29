@@ -93,9 +93,10 @@ hv.writefiles = (file) => {
 /* Main */
 hv.main = function () {
 	console.log("Hello World!");
-    fs.open();
-    console.log(fs.readFile("./blog/test.md"));
-    document.getElementById('mdcontent').innerHTML += md.render("hi");
+    var reader = FileReader();
+    var text = reader.readAsText("./blog/test.md");
+    console.log(text);
+    document.getElementById('mdcontent').innerHTML += md.render(text);
 
     hv.processFiles();
     // hv.read();

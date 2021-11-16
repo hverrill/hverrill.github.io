@@ -95,7 +95,7 @@ hv.main = function () {
 	console.log("Hello World!");
     
     var reader = new FileReader();
-    var text = reader.readAsText(fs.createReadStream("../blog/test.md"));
+    var text = reader.readAsText(fs.createReadStream("https://github.com/hverrill/blog/blob/main/test.md"));
     console.log(text);
     document.getElementById('mdcontent').innerHTML += md.render(text);
 

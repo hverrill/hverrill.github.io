@@ -200,10 +200,7 @@ header {
 }
 
 
-.footContent{
-    /* tbd */
-}
-.footer {
+footer.footer {
     margin: 10px 20px;
     display: flex;
     flex-direction: row;

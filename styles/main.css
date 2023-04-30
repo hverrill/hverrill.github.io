@@ -158,6 +158,12 @@ html {
 .small {
     font-size: 1.3em;
 }
+.paragraph {
+    font-size: .8em;
+}
+.title {
+    text-shadow: 1px 1px #ff0075;
+}
 
 /* Header and Navbar */
 .bar {

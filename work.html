@@ -19,26 +19,28 @@
 <body class="body">
     <header>
         <div class="bar">
+            <hr class="headerLine">
             <a href="\" class="btn">Home</a>
-            <a href="\work.html" class="btn">My Work</a>
+            <a href="\work.html" class="btn selected">My Work</a>
             <a href="\about.html" class="btn">About Me</a>
             <a href="\contact.html" class="btn">Contact</a>
+            <hr class="headerLine">
+        </div>
+        <div class="bar">
+            <!-- Tab links -->
+            <button class="tabBtn active" onclick="openCity(event, 'Design')">Design</button>
+            <button class="tabBtn" onclick="openCity(event, 'Writing')">Writing</button>
+            <button class="tabBtn" onclick="openCity(event, 'Software')">Software</button>
+            <button class="tabBtn" onclick="openCity(event, 'Experience')">Work Experience</button>
         </div>
     </header>
     <main class="main" id="top">
-        <div id="projects">
+        <div id="projects" class="primary">
             <!-- Projects Header -->
-            <div class="header primary">
-                <p>My Projects</p>
-            </div>
+        
             <!-- Projects List -->
-            <!-- Tab links -->
-            <div class="tab bar">
-                <button class="tablinks btn active" onclick="openCity(event, 'Design')">Design</button>
-                <button class="tablinks btn" onclick="openCity(event, 'Writing')">Writing</button>
-                <button class="tablinks btn" onclick="openCity(event, 'Software')">Software</button>
-                <button class="tablinks btn" onclick="openCity(event, 'Experience')">Work Experience</button>
-            </div>
+            
+            
 
             <!-- Tab content -->
             <div id="Design" class="tabcontent" style="display: block;">

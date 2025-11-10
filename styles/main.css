@@ -14,11 +14,14 @@
     }
 } */
 :root {
-        --text-color: white;
-        --background-color: #1b1b1b;
-    }
-    .main {
-        text-shadow: 1px 1px 2px black;
+    --text-color: 1b1b1b;
+    --background-color: #1b1b1b;
+    --light-background-color: #acab9f;
+    --button-background: #4464AD;
+    --accent-background: #efe9dd;
+}
+.main {
+    /* text-shadow: 1px 1px 2px black; */
 }
 /* Fonts */
 @font-face {
@@ -31,7 +34,7 @@
 
 /* == UNIVERSAL RULES == */
 .body, body, main {
-    background-color: var(--background-color);
+    background-color: var(--light-background-color);
     color: var(--text-color);
     font-family: 'Calibri Light', Verdana, Tahoma, serif, sans-serif;
     font-weight: lighter;
@@ -44,7 +47,7 @@
 .link:hover {
     color: var(--text-color);
 }
-b {
+b.b {
     font-size: 105%;
     font-weight: bold;
 }
@@ -137,8 +140,9 @@ html {
 /* == LARGE SCREENS == */
 /* Primary, Secondary, and Wide Sizes for content */
 .primary {
-    max-width: 600px;
+    max-width: 850px;
     margin: 0 30px 0 20px;
+    
 }
 .secondary {
     max-width: 82vw;
@@ -148,6 +152,11 @@ html {
 /* Custom Font Sizes */
 .header { 
     font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-height: fit-content;
+    
 }
 .big { 
     font-size: 1.7em;
@@ -159,45 +168,151 @@ html {
     font-size: 1.3em;
 }
 .paragraph {
-    font-size: .8em;
+    font-size: .7em;
+    font-weight: 1.4em;
 }
 .title {
-    text-shadow: 1px 1px #ff0075;
+    margin: .5em 0 .7em 0;
+    font-family: 'PT Serif', Verdana, Tahoma, serif, sans-serif;
+    /* max-width: fit-content; */
+    /* flex-shrink: 3; */
+    /* text-shadow: 1px 1px #ff0075; */
 }
+
 
 /* Header and Navbar */
 .bar {
     color: var(--text-color);
-    margin-left: 20px;
-    min-height: 5em;
+    /* margin-left: 20px; */
+    /* min-height: 5em; */
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: var(--accent-background);
     
 }
 header {
-    margin-left: 7vw;
+    /* margin-left: 7vw; */
     z-index: 999;
 }
+.btn.auxbtn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.btn.auxbtn:hover {
+    background: #4464AD;
+    color: white;
+}
 .bar > .btn{
-    background:rgba(0, 0, 0, 0.5);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
-    text-decoration:none;
+    text-decoration: none;
     letter-spacing:2px;
     margin: 20px 2px;
     text-transform: uppercase;
-    position: relative;
-    color: var(--text-color);
-    top: 20px;
+    position:relative;
+    /* color: var(--text-color); */
+    /* top: 20px; */
     transition: .2s;
+}
+.bar > .selected {
+    background: #899A84;
 }
 .bar > .btn:hover{
     border:none;
-    background: rgba(0, 0, 0, 0.4);
-    background: #fff;
+    background: #4464AD;
     padding: 20px 20px;
     margin: 0px 2px;
-    color: #1b1b1b;
+    color: var(--text-color);
+    /* color: #1b1b1b; */
+}
+hr.headerLine {
+    display: block;
+    height: 1px;
+    width: 30vw;
+    border: 0;
+    border-top: 1.5px solid hsla(0, 0%, 11%, 0.5);
+    margin: 0 1em ;
+    padding: 0;
+    /* flex-grow: 3; */
+    /* padding-top: 25px; */
+
+}
+
+/* Info Cards */
+.infoCardContainer.horizontal {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 10px;
+}
+.infoCardContainer.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    /* align-content: flex-start; */
+    /* align-items: left; */
+}
+.infoCardContainer.merge {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    background-color: var(--accent-background);
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+.vertical > .infoCard {
+    background-color: var(--accent-background);
+    padding: .7em;
+    border-radius: 4px;
+    flex-grow: 9;
+}
+.horizontal > .infoCard {
+    background-color: var(--accent-background);
+    padding: .7em;
+    border-radius: 4px;
+    flex-grow: 9;
+    width: 30vw;
+}
+.merge >.infoCard {
+    background-color: var(--accent-background);
+    border-radius: 4px;
+    flex-grow: 9;
+}
+.merge > .infoCard > .infoCardHeader {
+    font-family: 'PT Serif', Verdana, Tahoma, serif, sans-serif;
+    text-align: left;
+}
+.infoCardHeader {
+    font-family: 'PT Serif', Verdana, Tahoma, serif, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+.horizontal > .infoCard > .infoCardContent {
+    color: #1b1b1be8;
+    text-align: center;
+    margin: 0;
+    font-size: .7em;
+    line-height: 1.4em;
+}
+
+.vertical > .infoCard > .infoCardContent {
+    color: #1b1b1be8;
+    text-align: left;
+    margin: 0;
+    font-size: .7em;
+    line-height: 1.4em;
+}
+.merge > .infoCard > .infoCardContent {
+    color: #1b1b1be8;
+    text-align: left;
+    margin: 0;
+    font-size: .7em;
+    line-height: 1.4em;
 }
 
 /* Card Buttons */
@@ -210,9 +325,26 @@ header {
 }
 /* Abstract Page Images */
 .image {
-    max-width: 600px;
-    margin: 0px 0px 1em 20px;
+    /* max-width: 600px; */
+    display: flex;
+    margin: 0 auto 0 auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
     filter: drop-shadow(2px 2px 2px #00000054);
+}
+.imgContainer {
+    display: flex;
+    /* margin: 1em auto 1em auto; */
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 1em 0;
+    max-width: 100%;
+}
+.heroImage {
+    max-height: 500px;
 }
 
 /* Works Page Tabs */
@@ -224,8 +356,37 @@ header {
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab > .tablinks {
+.tabBtn {
     top: 0;
+    /* tab buttons should be transparent and a div around them should underline them when they're selected */
+    background: transparent;
+    padding: 11.5px 20px;
+    text-decoration: none;
+    border: none;
+    
+    letter-spacing: 2px;
+    margin: 0 0 20px 2px;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--text-color);
+    /* top: 20px; */
+    transition: .1s;
+
+}
+
+/* .bar >.selected {
+    background: #899A84;
+} */
+
+.tabBtn:hover {
+    top: 0;
+
+    background: transparent;
+    border-bottom: 1.5px solid rgb(27, 27, 27, 0.5);
+    padding: 10px 20px;
+    margin: 0 0 20px 2px;
+    color: var(--text-color);
+    /* color: #1b1b1b; */
 }
 .tab button {
     
@@ -242,7 +403,10 @@ header {
 .tabcontent {
   display: none;
 }
-
+.hero {
+    height: 500px;
+    background-color: #1b1b1b;
+}
 
 
 

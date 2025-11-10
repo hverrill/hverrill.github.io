@@ -156,6 +156,7 @@ html {
     align-items: center;
     justify-content: left;
     max-height: fit-content;
+    margin: 0 0 0 20px;
     
 }
 .big { 
@@ -174,8 +175,10 @@ html {
 .title {
     margin: .5em 0 .7em 0;
     font-family: 'PT Serif', Verdana, Tahoma, serif, sans-serif;
-    /* max-width: fit-content; */
-    /* flex-shrink: 3; */
+    /* max-width:max-content; */
+    text-wrap: nowrap;
+    width: auto;
+    /* flex-grow: 3; */
     /* text-shadow: 1px 1px #ff0075; */
 }
 h3.title {
@@ -235,12 +238,12 @@ header {
 hr.headerLine {
     display: block;
     height: 1px;
-    width: 30vw;
+    width: 60vw;
     border: 0;
     border-top: 1.5px solid hsla(0, 0%, 11%, 0.5);
     margin: 0 1em ;
     padding: 0;
-    /* flex-grow: 3; */
+    flex-shrink: 2;
     /* padding-top: 25px; */
 
 }

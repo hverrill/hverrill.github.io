@@ -16,7 +16,7 @@
 :root {
     --text-color: 1b1b1b;
     --background-color: #1b1b1b;
-    --light-background-color: #acab9f;
+    --light-background-color: #c4c2b6;
     --button-background: #4464AD;
     --accent-background: #efe9dd;
 }
@@ -82,7 +82,7 @@ html {
     background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
     background-repeat: repeat;
     animation: bg-animation .2s infinite;
-    opacity: .4;
+    opacity: .55;
     visibility: visible;
     z-index: -999;
 }          
@@ -269,7 +269,7 @@ hr.headerLine {
     flex-direction: row;
     background-color: var(--accent-background);
     margin: 10px 0 10px 0;
-    padding: 10px;
+    padding: .7em;
     border-radius: 4px;
 }
 .vertical > .infoCard {
@@ -367,12 +367,13 @@ hr.headerLine {
     top: 0;
     /* tab buttons should be transparent and a div around them should underline them when they're selected */
     background: transparent;
+    /* background: rgb(27, 27, 27, 0.2); */
     padding: 11.5px 20px;
     text-decoration: none;
     border: none;
     
     letter-spacing: 2px;
-    margin: 0 0 20px 2px;
+    margin: 0 0 10px 4px;
     text-transform: uppercase;
     position: relative;
     color: var(--text-color);
@@ -381,17 +382,23 @@ hr.headerLine {
 
 }
 
-/* .bar >.selected {
-    background: #899A84;
-} */
-
 .tabBtn:hover {
     top: 0;
-
     background: transparent;
+    /* background: rgb(27, 27, 27, 0.3); */
     border-bottom: 1.5px solid rgb(27, 27, 27, 0.5);
     padding: 10px 20px;
-    margin: 0 0 20px 2px;
+    margin: 0 0 10px 4px;
+    color: var(--text-color);
+    /* color: #1b1b1b; */
+}
+.tabBtn.active {
+    top: 0;
+    background: transparent;
+    /* background: rgb(27, 27, 27, 0.3); */
+    border-bottom: 1.5px solid rgb(27, 27, 27, 0.5);
+    padding: 10px 20px;
+    margin: 0 0 10px 4px;
     color: var(--text-color);
     /* color: #1b1b1b; */
 }

@@ -66,7 +66,7 @@ hv.writefiles = (file) => {
 /** Functions */
 function openCity(evt, cityName) {
     // Declare all variables
-    var i, tabcontent, tablinks;
+    var i, tabcontent, tabBtn;
 
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -75,9 +75,9 @@ function openCity(evt, cityName) {
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tabBtn = document.getElementsByClassName("tabBtn");
+    for (i = 0; i < tabBtn.length; i++) {
+        tabBtn[i].className = tabBtn[i].className.replace(" active", "");
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab

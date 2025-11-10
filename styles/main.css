@@ -178,6 +178,9 @@ html {
     /* flex-shrink: 3; */
     /* text-shadow: 1px 1px #ff0075; */
 }
+h3.title {
+    margin: 1em 0 .7em 0;
+}
 
 
 /* Header and Navbar */
@@ -223,10 +226,11 @@ header {
 .bar > .btn:hover{
     border:none;
     background: #4464AD;
+    
     padding: 20px 20px;
     margin: 0px 2px;
-    color: var(--text-color);
-    /* color: #1b1b1b; */
+    /* color: var(--text-color); */
+    color: white;
 }
 hr.headerLine {
     display: block;

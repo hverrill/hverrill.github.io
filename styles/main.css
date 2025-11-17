@@ -14,7 +14,8 @@
     }
 } */
 :root {
-    --text-color: 1b1b1b;
+    --text-color: #1b1b1b;
+    --accent-color: #1b1b1b80;
     --background-color: #1b1b1b;
     /* --light-background-color: #c4c2b6; */
     --light-background-color: white;
@@ -241,7 +242,7 @@ hr.headerLine {
     height: 1px;
     width: 60vw;
     border: 0;
-    border-top: 1.5px solid hsla(0, 0%, 11%, 0.5);
+    border-top: 1.5px solid #1c1c1c80;
     margin: 0 1em ;
     padding: 0;
     flex-shrink: 2;
@@ -348,6 +349,7 @@ hr.headerLine {
     justify-content: center;
     max-width: 90%;
     filter: drop-shadow(2px 2px 2px #00000054);
+    border: 1px solid var(--accent-color);
 }
 .imgContainer {
     display: flex;

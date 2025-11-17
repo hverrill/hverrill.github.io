@@ -294,6 +294,14 @@ hr.headerLine {
     font-family: 'PT Serif', Verdana, Tahoma, serif, sans-serif;
     text-align: left;
 }
+.infoCardImage {
+        display: flex;
+        margin: 1em auto 1em auto;
+        align-items: center;
+        justify-content: center;
+        max-width: 90%;
+        filter: drop-shadow(2px 2px 2px #00000054);
+}
 .infoCardHeader {
     font-family: 'PT Serif', Verdana, Tahoma, serif, sans-serif;
     text-align: center;

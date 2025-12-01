@@ -24,6 +24,7 @@
 }
 .main {
     /* text-shadow: 1px 1px 2px black; */
+    margin: 2em 8vw;
 }
 /* Fonts */
 @font-face {
@@ -142,8 +143,8 @@ html {
 /* == LARGE SCREENS == */
 /* Primary, Secondary, and Wide Sizes for content */
 .primary {
-    max-width: 850px;
-    margin: 0 auto 0 auto;
+    max-width: 80vw;
+    margin: 0 10vw 0 10vw;
     
 }
 .secondary {
@@ -158,7 +159,8 @@ html {
     align-items: center;
     justify-content: center;
     max-height: fit-content;
-    margin: 0 0 0 10vw;
+    /* margin: 0 0 0 10vw; */
+    /* margin: 0; */
     
 }
 .big { 
@@ -198,6 +200,7 @@ h3.title {
     align-items: center;
     justify-content: center;
     background-color: var(--accent-background);
+    width: 100vw;
     
 }
 header {
@@ -220,6 +223,7 @@ header {
     letter-spacing:2px;
     margin: 20px 2px;
     text-transform: uppercase;
+    
     position:relative;
     /* color: var(--text-color); */
     /* top: 20px; */
@@ -270,9 +274,10 @@ hr.headerLine {
     align-items: stretch;
     flex-direction: row;
     background-color: var(--accent-background);
-    margin: 10px 0 10px 0;
+    margin: 10px auto 10px auto;
     padding: .7em;
     border-radius: 4px;
+    max-width: 70vw;
 }
 .vertical > .infoCard {
     background-color: var(--accent-background);
@@ -351,6 +356,21 @@ hr.headerLine {
     filter: drop-shadow(2px 2px 2px #00000054);
     border: 1px solid var(--accent-color);
 }
+.inlineImage {
+    /* max-width: 600px; */
+    display: flex;
+    margin: 0 auto 0 auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    filter: drop-shadow(2px 2px 2px #00000054);
+    border: 1px solid var(--accent-color);
+}
+.inlineImage:hover {
+    max-width: 71%;
+    filter: drop-shadow(2px 2px 4px #00000071);
+    border: 1px solid var(--accent-color);
+}
 .imgContainer {
     display: flex;
     /* margin: 1em auto 1em auto; */
@@ -413,10 +433,10 @@ hr.headerLine {
     color: var(--text-color);
     /* color: #1b1b1b; */
 }
-.tab button {
+/* .tab button {
     
 
-}
+} */
 
 
 /* Create an active/current tablink class */
@@ -426,14 +446,12 @@ hr.headerLine {
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
+    display: none;
 }
 .hero {
     height: 500px;
     background-color: #1b1b1b;
 }
-
-
 
 footer.footer {
     margin: 10px 20px;
@@ -454,7 +472,7 @@ table.table, th, td {
 table{}
 
 .main { /* Content Alignment */
-    margin: 2vw 0 3vw 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -472,13 +490,19 @@ div.card-footer {
 .projectCard {
     display: inline-block;
     margin-bottom: 15px;
+    width: calc(100%/3.11);
 }
-#projectCardList {
+.card-title {
+    font-family: 'PT Serif', Verdana, Tahoma, serif, sans-serif;
+}
+.projectCardList {
+    display: flex;
     text-shadow: none;
     column-count: 3;
-    max-width: 70vw;
+    max-width: 80vw;
     margin: 0 15px;
     column-gap: 15px;
+    flex-wrap: wrap;
 }
 /* Remove underline from href card links */
 .projectCard:link { text-decoration: none; }
@@ -501,7 +525,7 @@ div.card-footer {
     }   
     /* Custom Font Sizes */
     .header { 
-        font-size: 2.4em;
+        font-size: 2.1em;
     }
     .big { 
         font-size: 1.9em;
@@ -548,16 +572,16 @@ div.card-footer {
     }
     /* Custom Font Sizes */
     .header { 
-        font-size: 1.9em;
+        font-size: 1.1em;
     }
     .big { 
-        font-size: 1.6em;
+        font-size: 1em;
     }
     .medium {
-        font-size: 1.2em;
+        font-size: .9em;
     }
     .small {
-        font-size: .9em;
+        font-size: .8em;
     }
     /* Project Card Rules */
     #projectCardList {

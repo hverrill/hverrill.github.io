@@ -10,8 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/normalize.css">
-        <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        
         <link rel="icon" href="../assets/favicon.png">
     </head>
     <body class="body">
@@ -25,21 +26,21 @@
                 <hr class="headerLine">
             </div>
             <div class="hero">
-                <img class="heroImage" src="../assets/vintagestoryhero.png" alt="A screenshot showing a virtual interview taking place.">
+                <img class="heroImage" src="../assets/vintagestoryheroimage.png" alt="A screenshot showing a virtual interview taking place.">
             </div>
         </header>
         <main class="main" id="top">            
             <div class="header primary">
                 <hr class="headerLine">
-                <h1 class="title"> 
+                <p class="title big"> 
                     Vintage Story Showcase Prototype
-                </h1>
+                <p>
                 <hr class="headerLine">
             </div>
             <div class="medium primary">
                 
                 <!-- Project Info -->
-            
+                
                 <div class="infoCardContainer merge">
                     <div class="infoCard">
                         <p class="infoCardHeader">
@@ -80,51 +81,56 @@
                 </div>
                 
                 <!-- Intro -->
-                <h3 class="title">
-                    Overview
-                </h3>
+                <div class="titleContainer">
+                    <p class="title big">Overview</p>
+                    <hr class="headerLine">
+                </div>
+                
                 <p class="paragraph">
                     I was tasked to develop an informational website prototype designed to inform or teach a new user. For my project, I chose to create a showcase website for an game called Vintage Story. I was expected to account for and use the many laws and principles of user interface design in order to guide my design. The prototype was expected to be accessible while educating the user on the features of the game.
                 </p>
-                <h3 class="title">
-                    Goals
-                </h3>
+                <div class="titleContainer">
+                    <p class="title big">Goals</p>
+                    <hr class="headerLine">
+                </div>
+
                 <div class="infoCardContainer horizontal">
                     <div class="infoCard">
                         <p class="infoCardHeader">
                             Blend Aesthetics
                         </p>
-                        <p class="infoCardContent">
+                        <!-- <p class="infoCardContent">
                             My goal was to blend the vintage, antiquarian aesthetic of Vintage Story with the accessible, modern design conventions of 2020s website design. 
-                        </p>
+                        </p> -->
                     </div>
 
                     <div class="infoCard">
                         <p class="infoCardHeader">
                             Easy to Understand
                         </p>
-                        <p class="infoCardContent">
+                        <!-- <p class="infoCardContent">
                             I wanted to make the complex game systems easy to understand by considering the laws and principles of user interface design.
-                        </p>
+                        </p> -->
                     </div>
 
                     <div class="infoCard">
                         <p class="infoCardHeader">
                             Show Expertise
                         </p>
-                        <p class="infoCardContent">
+                        <!-- <p class="infoCardContent">
                             My task was to demonstrate my knowledge of User Interface Design Principles by creating a user-friendly website without user testing.
-                        </p>
+                        </p> -->
                     </div>
 
                 </div>
                 <!-- Process -->
-                <h3 class="title">
-                    Process
-                </h3>
-                <h4 class="title">
+                <div class="titleContainer">
+                    <p class="title big">Process</p>
+                    <hr class="headerLine">
+                </div>
+                <p class="title medium">
                     Project Proposal
-                </h4>
+                </p>
                 <p class="paragraph">
                     Before I started work on the prototype, I first made a project proposal that described how I would consider and implement the various laws and principles of user interface design. In the proposal, I explained how I planned to use each principle in my prototype. The link below will take you to a PDF of my project proposal.
                 </p>
@@ -132,48 +138,43 @@
                     <a href="https://docs.google.com/document/d/1ayFlj66bRN29R4_X8gKthqbOBsVKaBpUECXPCdzalsQ/edit?usp=sharing"><img class="inlineImage" src="../assets/proposal.png" alt=""></a>
                     <a href="https://docs.google.com/document/d/1ayFlj66bRN29R4_X8gKthqbOBsVKaBpUECXPCdzalsQ/edit?usp=sharing" class="btn auxbtn">View Proposal</a>
                 </div>
-                <h4 class="title">
+                <p class="title medium">
                     User Interface Design Principles
-                </h4>
+                </p>
+                <p class="title small">
+                    Jakob's Law
+                </p>
+                <p class="paragraph">
+                    Jakob's Law states that users both prefer and have an easier time navigating websites that work similarly to websites they have browsed in the past. In my project, I considered Jakob's Law by using a standard top-of-the-screen navigation bar, carousel elements, and hero images.
+                </p>
+                <img class="image" src="../assets/jakobslaw.png" alt="">
 
-                 <div class="infoCardContainer vertical">
-                    <div class="infoCard">
-                        <!-- <p class="infoCardHeader">
-                            Blend Aesthetics
-                        </p> -->
-                        <p class="infoCardContent">
-                            <b class="b">Jakob's Law</b> states that users both prefer and have an easier time navigating websites that work similarly to websites they have browsed in the past. In my project, I considered Jakob's Law by using a standard top-of-the-screen navigation bar, carousel elements, and hero images.
-                        </p>
-                        <img class="infoCardImage" src="../assets/jacobslaw.png" alt="">
-                    </div>
 
-                    <div class="infoCard">
-                        <!-- <p class="infoCardHeader">
-                            Easy to Understand
-                        </p> -->
-                        <p class="infoCardContent">
-                            The <b class="b">Spatial Contiguity Principle</b> states that users learn better when images and text in a webpage are in close proximity, rather than far away. I applied this principle in my project by placing text within and in close proximity to graphics to help users find key information.
-                        </p>
-                        <img class="infoCardImage" src="../assets/spacialcontiguityprinciple.png" alt="">
-                    </div>
+                <p class="title small">
+                    Spatial Contiguity Principle
+                </p>
+                <p class="paragraph">
+                    The Spatial Contiguity Principle states that users learn better when images and text in a webpage are in close proximity, rather than far away. I applied this principle in my project by placing text within and in close proximity to graphics to help users find key information.
+                </p>
+                <img class="image" src="../assets/spacialcontiguityprinciple.png" alt="">
 
-                    <div class="infoCard">
-                        <!-- <p class="infoCardHeader">
-                            Demonstrate Expertise
-                        </p> -->
-                        <p class="infoCardContent">
-                            <b class="b">Fitts’s Law</b> states that the time required to interact with an intractable element is proportional to the distance to and size of that element. In my project, I accounted for Fitts’s law by making the button and interactable elements in my prototype large. This accommodates for all kinds of users, but also makes all the interactables easy and quick to use for everyone.
-                        </p>
-                        <img class="infoCardImage" src="../assets/fittslaw.png" alt="">
-                    </div>
 
-                </div>
+                <p class="title small">
+                    Fitts’s Law
+                </p>
+                <p class="paragraph">
+                    Fitts’s Law states that the time required to interact with an intractable element is proportional to the distance to and size of that element. In my project, I accounted for Fitts’s law by making the button and interactable elements in my prototype large. This accommodates for all kinds of users, but also makes all the interactables easy and quick to use for everyone.
+                </p>
+                <img class="image" src="../assets/fittslaw.png" alt="">
+                
+
 
 
                 <!-- Research Phase -->
-                <h3 class="title">
-                    Project Prototype
-                </h3>
+                <div class="titleContainer">
+                    <p class="title big">Project Prototype</p>
+                    <hr class="headerLine">
+                </div>
                 <p class="paragraph">
                     My final project prototype was a video game showcase website for a game called Vintage Story. The prototype was made in Figma, and each page is fully interactable. The first page is the homepage, which shows off the game to new users. The second page is the about the game World, and the third page shows all of the game's features and progression. The final page guides the user to purchase the game. 
                 </p>
@@ -182,10 +183,10 @@
                     <a href="https://www.figma.com/proto/1MSOH6R8qGqbtmMcGdngmN/Vintage-Story-Feature-Showcase?node-id=1-87&p=f&t=1erCWs34o9F3vMDc-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=1%3A87" class="btn auxbtn">View Prototype</a>
                 </div>
 
-
-                <h3 class="title">
-                    Retrospective
-                </h3>
+                <div class="titleContainer">
+                    <p class="title big">Retrospective</p>
+                    <hr class="headerLine">
+                </div>
                 <p class="paragraph">
                     My design career has so far been focused on learning the nitty-gritty and small details of design work. This project was an opportunity to simply execute on what I've learned in the past, and I feel that I executed well. I've always been attracted to simple and no-nonsense designs, but this project allowed me to add details and complexity that I normally would have passed on. Overall, this project was a great exercise that I'm proud of. 
                 </p>

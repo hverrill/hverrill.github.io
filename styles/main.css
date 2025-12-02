@@ -503,12 +503,12 @@ table{}
     color: black;
 }
 .card-body {
-    background-color: var(--accent-background);
+    /* background-color: var(--accent-background); */
 }
 div.card-footer {
     padding: .5rem .75rem 0.1rem;
     text-align: center;
-    background-color: var(--accent-background);
+    /* background-color: var(--accent-background); */
 }
 .projectCard {
     display: inline-block;

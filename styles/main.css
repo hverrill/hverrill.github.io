@@ -353,6 +353,7 @@ header {
 }
 .cardButtons > .btn {
     /* background: linear-gradient(70deg, #ff4a00, #ff0075); */
+    /* background-color: #00000023; */
     margin: 0px 15px 10px;
 }
 /* Abstract Page Images */
@@ -450,6 +451,10 @@ header {
 
 } */
 
+
+#seeAllSpacer {
+    margin-bottom: 1em;
+}
 
 /* Create an active/current tablink class */
 .tab button.active {

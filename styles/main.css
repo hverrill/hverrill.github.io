@@ -189,6 +189,14 @@ html {
     /* flex-grow: 3; */
     /* text-shadow: 1px 1px #ff0075; */
 }
+.subtitle {
+    font-family: 'PT Serif', Verdana, Tahoma, serif, sans-serif;
+    text-wrap: nowrap;
+    position: relative;
+    /* or absolute, fixed, sticky */
+    bottom: .7em;
+    font-size: .9em;
+}
 .titleContainer {
     display: flex;
     align-items: center;

@@ -177,7 +177,7 @@ html {
     font-size: 1.1em;
 }
 .paragraph {
-    font-size: .7em;
+    font-size: .75em;
     font-weight: 1.4em;
 }
 .title {
@@ -346,6 +346,9 @@ header {
     font-size: .7em;
     line-height: 1.4em;
 }
+.verticalSpacer {
+    padding-top: 3em;
+}
 
 /* Card Buttons */
 .cardButtons {
@@ -464,6 +467,7 @@ header {
 /* Style the tab content */
 .tabcontent {
     display: none;
+    flex-direction: column;
 }
 .hero {
     height: 500px;

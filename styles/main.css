@@ -363,7 +363,7 @@ header {
     /* width: 100%; */
     border: 0;
     border-left: 1.5px solid #1c1c1c80;
-    margin: 2em 0;
+    margin: 3em 0 3em 0;
     padding: 0;
     flex-shrink: 2;
     /* padding-top: 3em; */
@@ -418,6 +418,21 @@ header {
 .heroImage {
     max-height: 500px;
     
+}
+.projectButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+.projectButtonContainer > .btn{
+    padding: 1em 1.7em;
+    margin: 0 1em;
+}
+
+.projectButtonContainer > .btn:hover {
+    background-color: #4464AD;
+    color: var(--accent-background);
 }
 
 /* Works Page Tabs */

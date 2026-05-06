@@ -428,6 +428,8 @@ header {
 .projectButtonContainer > .btn{
     padding: 1em 1.7em;
     margin: 0 1em;
+    background-color: #899A84;
+    color: white;
 }
 
 .projectButtonContainer > .btn:hover {
